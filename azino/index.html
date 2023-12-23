@@ -1,0 +1,147 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Azino Non-Profit Charity WordPress Theme</title>
+        <meta name="description" content="Plantilla Boilerplate">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon-16x16.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <section class="header-area transparent-header">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <div class="logo">
+                                <a href=""><img src="img/logo/logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <div class="header-btn text-right">
+                                <a href="https://themeforest.net/item/azino-charity-fundraising-wordpress-theme/29297551" class="btn">Purchese Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="slider-area slider-height" data-background="img/bg/banner.jpg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-10 col-lg-12 col-md-12 offset-xl-1">
+                                <div class="slider-text text-center">
+                                    <h4>The most advanced</h4>
+                                    <h2>Non-profit <br> Charity Theme</h2>
+                                    <span>PICK A CONCEPT</span>
+
+                                    <div class="slider-icon">
+                                        <a href="#demos" class="updown"><img src="img/icon/icon1.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+            </section>
+            
+            <section id="demos" class="features-area pb-80">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <div class="single-features text-center mb-40">
+                                <div class="fea-img mb-60">
+                                    <a href="https://demo.themebeer.com/azino/">
+                                        <img src="img/feature/home-1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <h4>Creative Demo</h4>
+                            </div>       
+                        </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6">
+                            <div class="single-features text-center mb-40">
+                                <div class="fea-img mb-60">
+                                    <a href="https://demo.themebeer.com/azino/home-two/">
+                                        <img src="img/feature/home-2.png" alt="">
+                                    </a>
+                                </div>
+                                <h4>Classic Demo</h4>
+                            </div>       
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="purches-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-8 col-md-10 purchase-button">
+                            <div data-url="https://themeforest.net/item/azino-charity-fundraising-wordpress-theme/29297551" class="purchese-text text-center mb-30">
+                                <img src="img/bg/p-bg.png" alt="">
+                                <h2>Purchase <br> Now!</h2>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </section>   
+        </main>
+        <footer>
+            <div class="footer-area">
+                <div class="container-fluid">
+                        <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <div class="copyright-text text-center text-md-left">
+                                <a href="https://themeforest.net/user/themebeer/portfolio">©THMEBEER</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <div class="p-icon text-right">
+                                <a href="#top" class="scroll-to-top"><img src="img/scroll-to-top.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/vendor/jquery-3.2.1.min.js"></script>
+        <script>
+            (function ($) {
+            "use strict";
+                // background-img//
+                $("[data-background]").each(function(){
+                    $(this).css("background-image","url(" + $(this).attr("data-background") +")")
+                })
+
+                // Scroll to demos
+                $( '.updown' ).on( 'click', function(e){
+                    e.preventDefault();
+                    var href = $(this).attr( 'href' );
+                    $( 'html, body' ).animate({
+                        scrollTop: $( href ).offset().top - 50
+                    }, 1000 );
+                });
+                $( '.scroll-to-top' ).on( 'click', function(e){
+                    e.preventDefault();
+                    $( 'html, body' ).animate({
+                        scrollTop: $( 'body' ).offset().top
+                    }, 700 );
+                });
+                $( '.purchese-text' ).on( 'click', function(e){
+                    e.preventDefault();
+                    var url = $(this).data('url');
+                    window.location = url;
+                });
+
+            })(jQuery);
+        </script>
+    </body>
+
+</html>
