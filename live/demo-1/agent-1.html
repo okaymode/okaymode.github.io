@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- title -->
+        <title>The Houze</title>
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="../img/favicon/favicon-1.png">
+        <!-- css here -->
+        <!-- ========================== -->
+        <!-- finest-icon.css -->
+        <link rel="stylesheet" href="../css/finest-icon.css">
+        <!-- animate.css -->
+        <link rel="stylesheet" href="../css/animate.css">
+        <!-- select2.min.css -->
+        <link rel="stylesheet" href="../css/select2.min.css">
+        <!-- main.css -->
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body class="select-style property-select category-select thz-font-roboto thz-text-secondary">
+        <!--Preloader Start-->
+        <div class="loader-wrapper">
+            <div class="lds-spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!--Preloader End-->
+
+        <!--Scroll UP Section Start-->
+        <div class="scroll-up">
+            <svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
+        <!--Scroll UP Section End-->
+
+        <!-- thz-offcanvus-area-end -->
+        <!-- add calss name"left-right" to open offcanvas menu left to right -->
+        <div class="thz-offcanvas-area left-right">
+            <div class="thz-offcanvas-wrapper">
+                <div class="thz-offcanvas-top thz-flex thz-items-center thz-justify-between">
+                    <div class="thz-offcanvas-logo">
+                        <a href="index.html"><img src="../img/logos/brand-logo.svg" alt=""></a>
+                    </div>
+                    <div class="thz-offcanvas-close">
+                        <button class="thz-offcanvas-close-btn thz-text-xl">
+                            <i class="fi-close"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="thz-offcanvas-main">
+                    <div class="thz-offcanvas-content">
+                        <h3 class="thz-offcanvas-title">Hello There!</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+                    </div>
+                    <div class="thz-offcanvas-menu lg:thz-hidden">
+                        <nav></nav>
+                    </div>
+                    <div class="thz-offcanvas-contact">
+                        <h3 class="thz-offcanvas-title sm">Information</h3>
+                        <ul>
+                            <li><a href="#">+ 4 20 7700 1007</a></li>
+                            <li><a href="#">hello@houzey.com</a></li>
+                            <li><a href="#">65 Park Avenue, Florida, USA</a></li>
+                        </ul>
+                    </div>
+                    <div class="thz-offcanvas-button">
+                        <!-- login -->
+                        <div class="thz-flex thz-flex-col xs:thz-flex-row thz-gap-5 thz-items-center thz-justify-between">
+                            <!-- thz-account-btn -->
+                            <a class="thz-flex thz-items-center thz-justify-center thz-gap-2 thz-text-base thz-text-primary thz-font-medium thz-relative hover:thz-text-brand thz-transition-all" href="#"><span class="thz-inline-block"><i class="fi-user thz-text-[22px]"></i></span>My Account</a>
+                            <!-- add-property-btn -->
+                            <a class="thz-font-medium thz-text-base thz-text-white thz-bg-primary thz-w-full xs:thz-w-[148px] thz-h-[42px] thz-flex thz-items-center thz-justify-center thz-rounded" href="#">+ Add Property</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body-overlay"></div>
+        <!-- thz-offcanvus-area-end -->
+
+        <!-- header-start -->
+        <header class="main-header lg:thz-border-b thz-border-border1">
+            <div class="thz-container-fluid thz-mx-auto xs:thz-w-[400px] sm:thz-w-[540px] md:thz-w-[720px] lg:thz-w-[960px] xl:thz-w-[1200px] 2xl:thz-w-[1400px] thz-px-[15px] thz-flex thz-justify-between thz-items-center thz-relative thz-py-5">
+                <!-- logo -->
+                <a href="index.html"><img src="../img/logos/brand-logo.svg" alt=""></a>
+                <!-- menu -->
+                <div class="thz-flex thz-items-center thz-gap-6 xl:thz-gap-24">
+                    <div class=" thz-hidden lg:thz-block">
+                        <!-- main-menu -->
+                        <nav class="thz-mobile-menu-active main-menu">
+                            <ul class="lg:thz-flex lg:thz-items-center lg:thz-gap-7 xl:thz-gap-10">
+                                <li class="thz-relative thz-group">
+                                    <a class="thz-font-medium thz-text-base thz-text-primary hover:thz-text-brand thz-transition-all" href="#">Home</a>
+                                    <!-- sub-menu -->
+                                    <ul class="thz-submenu lg:thz-absolute lg:thz-top-[250%] lg:thz-left-0 lg:thz-w-[230px] lg:thz-bg-white lg:thz-rounded-sm lg:thz-py-6 lg:thz-px-7 lg:thz-space-y-3 lg:thz-z-20 lg:thz-opacity-0 lg:thz-invisible group-hover:lg:thz-opacity-100 group-hover:lg:thz-visible group-hover:lg:thz-top-[220%] lg:thz-transition-all lg:thz-duration-300">
+                                        <li><a href="index.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Home One</a></li>
+                                        <li><a href="index-2.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Home Two</a></li>
+                                    </ul>
+                                </li>
+                                <li class="thz-relative thz-group">
+                                    <a class="thz-font-medium thz-text-base thz-text-primary hover:thz-text-brand thz-transition-all" href="#">Real Estate</a>
+                                    <!-- sub-menu -->
+                                    <ul class="thz-submenu lg:thz-absolute lg:thz-top-[250%] lg:thz-left-0 lg:thz-w-[230px] lg:thz-bg-white lg:thz-rounded-sm lg:thz-py-6 lg:thz-px-7 lg:thz-space-y-3 lg:thz-z-20 lg:thz-opacity-0 lg:thz-invisible group-hover:lg:thz-opacity-100 group-hover:lg:thz-visible group-hover:lg:thz-top-[220%] lg:thz-transition-all lg:thz-duration-300">
+                                        <li><a href="properties.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Properties Grid Layout</a></li>
+                                        <li><a href="properties-list.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Properties List Layout</a></li>
+                                        <li><a href="properties.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Properties Left Sidebar</a></li>
+                                        <li><a href="properties-right-sidebar.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Properties Right Sidebar</a></li>
+                                        <li><a href="search.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Properties Half map</a></li>
+                                        <li><a href="agent-1.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Agent Layout 1</a></li>
+                                        <li><a href="agent-2.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Agent Layout 2</a></li>
+                                        <li><a href="agent-single.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Agent Single</a></li>
+                                    </ul>
+                                </li>
+                                <li class="thz-relative thz-group">
+                                    <a class="thz-font-medium thz-text-base thz-text-primary hover:thz-text-brand thz-transition-all" href="#">Single Property</a>
+                                    <!-- sub-menu -->
+                                    <ul class="thz-submenu lg:thz-absolute lg:thz-top-[250%] lg:thz-left-0 lg:thz-w-[230px] lg:thz-bg-white lg:thz-rounded-sm lg:thz-py-6 lg:thz-px-7 lg:thz-space-y-3 lg:thz-z-20 lg:thz-opacity-0 lg:thz-invisible group-hover:lg:thz-opacity-100 group-hover:lg:thz-visible group-hover:lg:thz-top-[220%] lg:thz-transition-all lg:thz-duration-300">
+                                        <li class="thz-relative">
+                                            <a href="single-property.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Layout One</a>
+                                            <!-- sub-menu -->
+                                            <ul class="thz-submenu sub-menu-3 lg:thz-absolute lg:!thz-top-0 lg:thz-left-[100%] lg:thz-w-[230px] lg:thz-bg-white lg:thz-rounded-sm lg:thz-py-6 lg:thz-px-7 lg:thz-space-y-3 lg:thz-z-20 lg:thz-transition-all lg:thz-duration-300">
+                                                <li><a href="#" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Grid One</a></li>
+                                                <li><a href="#" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Grid Two</a></li>
+                                                <li><a href="#" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Grid Three</a></li>
+                                                <li><a href="#" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Grid Four</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="single-property-2.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Layout Two</a></li>
+                                        <li><a href="single-property-3.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Layout Three</a></li>
+                                        <li><a href="single-property-4.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Layout Four</a></li>
+                                    </ul>
+                                </li>
+                                <li class="thz-relative thz-group">
+                                    <a class="thz-font-medium thz-text-base thz-text-primary hover:thz-text-brand thz-transition-all" href="#">Blog</a>
+                                    <!-- sub-menu -->
+                                    <ul class="thz-submenu lg:thz-absolute lg:thz-top-[250%] lg:thz-left-0 lg:thz-w-[230px] lg:thz-bg-white lg:thz-rounded-sm lg:thz-py-6 lg:thz-px-7 lg:thz-space-y-3 lg:thz-z-20 lg:thz-opacity-0 lg:thz-invisible group-hover:lg:thz-opacity-100 group-hover:lg:thz-visible group-hover:lg:thz-top-[220%] lg:thz-transition-all lg:thz-duration-300">
+                                        <li><a href="blog.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Blog</a></li>
+                                        <li><a href="blog-single.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Blog Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="thz-font-medium thz-text-base thz-text-primary hover:thz-text-brand thz-transition-all" href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="thz-hidden lg:thz-block">
+                        <!-- login -->
+                        <ul class="thz-flex thz-items-center thz-gap-6 xl:thz-gap-10">
+                            <li class="thz-relative thz-group">
+                                <a class="thz-flex thz-items-center thz-gap-2 thz-text-base thz-text-primary thz-font-medium thz-relative hover:thz-text-brand thz-transition-all" href="#"><span class="thz-inline-block"><i class="fi-user thz-text-[22px]"></i></span>My Account</a>
+                                <!-- drop-down -->
+                                <ul class="thz-absolute thz-top-[250%] thz-left-0 thz-w-[230px] thz-bg-white lg:thz-rounded-sm thz-py-5 thz-pl-4 thz-z-10 custom-shadow-3 thz-opacity-0 thz-invisible group-hover:thz-opacity-100 group-hover:thz-top-[200%] group-hover:thz-visible thz-transition-all thz-duration-300">
+                                    <li><a href="#" class="thz-text-primary thz-text-[14px] thz-font-normal thz-flex thz-items-center hover:thz-text-brand thz-transition-all"><span class="thz-inline-block thz-mr-2"><i class="fi-heart"></i></span>My Favourites</a></li>
+                                </ul>
+                            </li>
+                            <li> <a class="thz-font-medium thz-text-base thz-text-white thz-bg-primary thz-py-2.5 thz-px-6 thz-rounded thz-inline-block" href="#">+ Add Property</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- thz-offcanvas-open-btn -->
+                <button class="thz-offcanvas-open-btn thz-text-xl thz-text-primary lg:thz-hidden">
+                    <i class="fi-menu"></i>
+                </button>
+            </div>
+            <!-- nav-bar-end -->
+        </header>
+        <!-- header-end -->
+        
+        <!-- agent-section-start -->
+        <section class="thz-container thz-pt-10 lg:thz-pt-16 thz-pb-10 lg:thz-pb-16 xl:thz-pb-20 2xl:thz-pb-24">
+                <!-- agent-title -->
+                <div class="thz-flex thz-flex-col sm:thz-flex-row thz-space-y-4 lg:thz-space-y-0 sm:thz-justify-between thz-items-center thz-pb-14">
+                    <!-- title -->
+                    <h3 class="thz-text-3xl md:thz-text-4xl lg:thz-text-5xl thz-font-extrabold thz-text-primary">Agent One</h3>
+                    <!-- bredcum -->
+                    <div class="thz-flex thz-items-center thz-space-x-3">
+                        <a class="thz-text-sm thz-font-normal" href="index.html">Home</a>
+                        <span class="thz-h-1 thz-w-1 thz-bg-primary thz-rounded-full"></span>
+                        <span class="thz-text-sm thz-font-normal">Agents</span>
+                    </div>
+                </div>
+                <!-- agent-item -->
+                <div class="thz-grid thz-grid-cols-1 md:thz-grid-cols-2 lg:thz-grid-cols-3 xl:thz-grid-cols-4 thz-gap-7">
+                    <!-- agent-list -->
+                    <div class="thz-col-span-1 md:thz-col-span-4 xl:thz-col-span-3">
+                        <div class="thz-grid sm:thz-grid-cols-2 lg:thz-grid-cols-3 thz-gap-7">
+                                <!-- single agent 1-->
+                                <div class="thz-border thz-border-border3 thz-rounded-2xl">
+                                    <!-- agent-img -->
+                                    <div class="thz-p-2.5">
+                                        <img class="thz-w-full thz-rounded-lg" src="../img/agents/agent-20.webp" alt="">
+                                    </div>
+                                    <!-- agent-content -->
+                                    <div class="thz-flex thz-flex-col thz-divide-y thz-divide-gray">
+                                        <div class="thz-px-5 thz-py-5">
+                                            <a class="thz-text-lg thz-font-medium thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="agent-single.html">Linda Gomez</a>
+                                            <p class="thz-text-sm thz-font-normal thz-text-secondary">Sales Agent</p>
+                                        </div>
+                                        <div class="thz-flex thz-justify-between thz-px-5 thz-py-5">
+                                            <h3 class="thz-text-sm thz-text-primary thz-font-medium">3 <span class="thz-text-sm thz-font-normal thz-text-secondary">Properties</span></h3>
+                                            <span class="thz-text-sm thz-font-normal thz-text-primary thz-flex thz-items-center"><i class="fi-star thz-mr-1"></i> 4.85</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single agent 2-->
+                                <div class="thz-border thz-border-border3 thz-rounded-2xl">
+                                    <!-- agent-img -->
+                                    <div class="thz-p-2.5">
+                                        <img class="thz-w-full thz-rounded-lg" src="../img/agents/agent-21.webp" alt="">
+                                    </div>
+                                    <!-- agent-content -->
+                                    <div class="thz-flex thz-flex-col thz-divide-y thz-divide-gray">
+                                        <div class="thz-px-5 thz-py-5">
+                                            <a class="thz-text-lg thz-font-medium thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="agent-single.html">Linda Gomez</a>
+                                            <p class="thz-text-sm thz-font-normal thz-text-secondary">Sales Agent</p>
+                                        </div>
+                                        <div class="thz-flex thz-justify-between thz-px-5 thz-py-5">
+                                            <h3 class="thz-text-sm thz-text-primary thz-font-medium">3 <span class="thz-text-sm thz-font-normal thz-text-secondary">Properties</span></h3>
+                                            <span class="thz-text-sm thz-font-normal thz-text-primary thz-flex thz-items-center"><i class="fi-star thz-mr-1"></i> 4.85</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single agent 3-->
+                                <div class="thz-border thz-border-border3 thz-rounded-2xl">
+                                    <!-- agent-img -->
+                                    <div class="thz-p-2.5">
+                                        <img class="thz-w-full thz-rounded-lg" src="../img/agents/agent-22.webp" alt="">
+                                    </div>
+                                    <!-- agent-content -->
+                                    <div class="thz-flex thz-flex-col thz-divide-y thz-divide-gray">
+                                        <div class="thz-px-5 thz-py-5">
+                                            <a class="thz-text-lg thz-font-medium thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="agent-single.html">Linda Gomez</a>
+                                            <p class="thz-text-sm thz-font-normal thz-text-secondary">Sales Agent</p>
+                                        </div>
+                                        <div class="thz-flex thz-justify-between thz-px-5 thz-py-5">
+                                            <h3 class="thz-text-sm thz-text-primary thz-font-medium">3 <span class="thz-text-sm thz-font-normal thz-text-secondary">Properties</span></h3>
+                                            <span class="thz-text-sm thz-font-normal thz-text-primary thz-flex thz-items-center"><i class="fi-star thz-mr-1"></i> 4.85</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single agent 4-->
+                                <div class="thz-border thz-border-border3 thz-rounded-2xl">
+                                    <!-- agent-img -->
+                                    <div class="thz-p-2.5">
+                                        <img class="thz-w-full thz-rounded-lg" src="../img/agents/agent-23.webp" alt="">
+                                    </div>
+                                    <!-- agent-content -->
+                                    <div class="thz-flex thz-flex-col thz-divide-y thz-divide-gray">
+                                        <div class="thz-px-5 thz-py-5">
+                                            <a class="thz-text-lg thz-font-medium thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="agent-single.html">Linda Gomez</a>
+                                            <p class="thz-text-sm thz-font-normal thz-text-secondary">Sales Agent</p>
+                                        </div>
+                                        <div class="thz-flex thz-justify-between thz-px-5 thz-py-5">
+                                            <h3 class="thz-text-sm thz-text-primary thz-font-medium">3 <span class="thz-text-sm thz-font-normal thz-text-secondary">Properties</span></h3>
+                                            <span class="thz-text-sm thz-font-normal thz-text-primary thz-flex thz-items-center"><i class="fi-star thz-mr-1"></i> 4.85</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single agent 5-->
+                                <div class="thz-border thz-border-border3 thz-rounded-2xl">
+                                    <!-- agent-img -->
+                                    <div class="thz-p-2.5">
+                                        <img class="thz-w-full thz-rounded-lg" src="../img/agents/agent-24.webp" alt="">
+                                    </div>
+                                    <!-- agent-content -->
+                                    <div class="thz-flex thz-flex-col thz-divide-y thz-divide-gray">
+                                        <div class="thz-px-5 thz-py-5">
+                                            <a class="thz-text-lg thz-font-medium thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="agent-single.html">Linda Gomez</a>
+                                            <p class="thz-text-sm thz-font-normal thz-text-secondary">Sales Agent</p>
+                                        </div>
+                                        <div class="thz-flex thz-justify-between thz-px-5 thz-py-5">
+                                            <h3 class="thz-text-sm thz-text-primary thz-font-medium">3 <span class="thz-text-sm thz-font-normal thz-text-secondary">Properties</span></h3>
+                                            <span class="thz-text-sm thz-font-normal thz-text-primary thz-flex thz-items-center"><i class="fi-star thz-mr-1"></i> 4.85</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single agent 6-->
+                                <div class="thz-border thz-border-border3 thz-rounded-2xl">
+                                    <!-- agent-img -->
+                                    <div class="thz-p-2.5">
+                                        <img class="thz-w-full thz-rounded-lg" src="../img/agents/agent-25.webp" alt="">
+                                    </div>
+                                    <!-- agent-content -->
+                                    <div class="thz-flex thz-flex-col thz-divide-y thz-divide-gray">
+                                        <div class="thz-px-5 thz-py-5">
+                                            <a class="thz-text-lg thz-font-medium thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="agent-single.html">Linda Gomez</a>
+                                            <p class="thz-text-sm thz-font-normal thz-text-secondary">Sales Agent</p>
+                                        </div>
+                                        <div class="thz-flex thz-justify-between thz-px-5 thz-py-5">
+                                            <h3 class="thz-text-sm thz-text-primary thz-font-medium">3 <span class="thz-text-sm thz-font-normal thz-text-secondary">Properties</span></h3>
+                                            <span class="thz-text-sm thz-font-normal thz-text-primary thz-flex thz-items-center"><i class="fi-star thz-mr-1"></i> 4.85</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single agent 7-->
+                                <div class="thz-border thz-border-border3 thz-rounded-2xl">
+                                    <!-- agent-img -->
+                                    <div class="thz-p-2.5">
+                                        <img class="thz-w-full thz-rounded-lg" src="../img/agents/agent-26.webp" alt="">
+                                    </div>
+                                    <!-- agent-content -->
+                                    <div class="thz-flex thz-flex-col thz-divide-y thz-divide-gray">
+                                        <div class="thz-px-5 thz-py-5">
+                                            <a class="thz-text-lg thz-font-medium thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="agent-single.html">Linda Gomez</a>
+                                            <p class="thz-text-sm thz-font-normal thz-text-secondary">Sales Agent</p>
+                                        </div>
+                                        <div class="thz-flex thz-justify-between thz-px-5 thz-py-5">
+                                            <h3 class="thz-text-sm thz-text-primary thz-font-medium">3 <span class="thz-text-sm thz-font-normal thz-text-secondary">Properties</span></h3>
+                                            <span class="thz-text-sm thz-font-normal thz-text-primary thz-flex thz-items-center"><i class="fi-star thz-mr-1"></i> 4.85</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single agent 8-->
+                                <div class="thz-border thz-border-border3 thz-rounded-2xl">
+                                    <!-- agent-img -->
+                                    <div class="thz-p-2.5">
+                                        <img class="thz-w-full thz-rounded-lg" src="../img/agents/agent-27.webp" alt="">
+                                    </div>
+                                    <!-- agent-content -->
+                                    <div class="thz-flex thz-flex-col thz-divide-y thz-divide-gray">
+                                        <div class="thz-px-5 thz-py-5">
+                                            <a class="thz-text-lg thz-font-medium thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="agent-single.html">Linda Gomez</a>
+                                            <p class="thz-text-sm thz-font-normal thz-text-secondary">Sales Agent</p>
+                                        </div>
+                                        <div class="thz-flex thz-justify-between thz-px-5 thz-py-5">
+                                            <h3 class="thz-text-sm thz-text-primary thz-font-medium">3 <span class="thz-text-sm thz-font-normal thz-text-secondary">Properties</span></h3>
+                                            <span class="thz-text-sm thz-font-normal thz-text-primary thz-flex thz-items-center"><i class="fi-star thz-mr-1"></i> 4.85</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- single agent 9-->
+                                <div class="thz-border thz-border-border3 thz-rounded-2xl">
+                                    <!-- agent-img -->
+                                    <div class="thz-p-2.5">
+                                        <img class="thz-w-full thz-rounded-lg" src="../img/agents/agent-26.webp" alt="">
+                                    </div>
+                                    <!-- agent-content -->
+                                    <div class="thz-flex thz-flex-col thz-divide-y thz-divide-gray">
+                                        <div class="thz-px-5 thz-py-5">
+                                            <a class="thz-text-lg thz-font-medium thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="agent-single.html">Linda Gomez</a>
+                                            <p class="thz-text-sm thz-font-normal thz-text-secondary">Sales Agent</p>
+                                        </div>
+                                        <div class="thz-flex thz-justify-between thz-px-5 thz-py-5">
+                                            <h3 class="thz-text-sm thz-text-primary thz-font-medium">3 <span class="thz-text-sm thz-font-normal thz-text-secondary">Properties</span></h3>
+                                            <span class="thz-text-sm thz-font-normal thz-text-primary thz-flex thz-items-center"><i class="fi-star thz-mr-1"></i> 4.85</span>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- side-bar -->
+                    <div class="md:thz-col-span-4 xl:thz-col-span-1">
+                        <div class="thz-grid sm:thz-grid-cols-2 lg:thz-grid-cols-3 xl:thz-grid-cols-1 thz-gap-7">
+                            <!-- agent-form -->
+                            <div class="thz-border thz-border-border3 thz-rounded-lg thz-p-8 sm:thz-p-4 md:thz-p-8">
+                                <!-- title -->
+                                <h2 class="thz-text-lg thz-text-primary thz-font-bold thz-mb-2">Search Agent</h2>
+                                <!-- form -->
+                                <form action="#">
+                                    <input class="thz-w-full thz-bg-white thz-border-b thz-border-border5 thz-py-4 thz-outline-none thz-text-sm thz-font-normal focus:thz-border-brand" type="text" placeholder="Name..">
+                                    <select  class="select thz-w-full thz-bg-white thz-border-b thz-border-border5 thz-py-4 thz-text-sm thz-font-normal thz-text-secondary" name="select">
+                                        <option>Category</option>
+                                        <option>Duplex House</option>
+                                        <option>Land</option>
+                                        <option>Apartments</option>
+                                        <option>Commercials</option>
+                                        <option>Home Rental</option>
+                                        <option>Sell</option>
+                                    </select>
+                                    <select class="select thz-w-full thz-bg-white thz-border-b thz-border-border5 thz-py-4 thz-text-sm thz-font-normal thz-text-secondary" name="select">
+                                        <option>All Cities</option>
+                                        <option>Chicago</option>
+                                        <option>Los Angeles</option>
+                                        <option>Miami</option>
+                                        <option>New York</option>
+                                    </select>
+                                    <button class="thz-w-full thz-bg-brand thz-text-white thz-text-base thz-font-medium thz-py-3 thz-rounded thz-mt-5 thz-flex thz-items-center thz-justify-center">Search agents<i class="fi-search thz-text-white thz-text-lg thz-font-bold thz-inline-block thz-ml-2"></i></button>
+                                </form>
+                            </div>
+                            <!-- feature-properties -->
+                            <div class="thz-border thz-border-border3 thz-rounded-lg thz-p-8 sm:thz-p-4 md:thz-p-8">
+                                <!-- title -->
+                                <h2 class="thz-text-lg thz-text-primary thz-font-bold thz-mb-4">Featured Properties</h2>
+                                <div class="thz-space-y-2">
+                                    <!-- feature-items-1 -->
+                                    <div class="thz-flex thz-gap-4">
+                                        <!-- features-img -->
+                                        <div>
+                                            <img class="thz-rounded thz-w-full" src="../img/feature/feature-1.png" alt="">
+                                        </div>
+                                        <!-- features-content -->
+                                        <div>
+                                            <a class="thz-text-sm thz-font-bold thz-text-primary" href="#">Ocean House</a>
+                                            <p class="thz-text-sm thz-font-normal thz-text-secondary">$3500</p>
+                                        </div>
+                                    </div>
+                                    <!-- feature-items-2 -->
+                                    <div class="thz-flex thz-gap-4">
+                                        <!-- features-img -->
+                                        <div>
+                                            <img class="thz-rounded thz-w-full" src="../img/feature/feature-2.png" alt="">
+                                        </div>
+                                        <!-- features-content -->
+                                        <div>
+                                            <a class="thz-text-sm thz-font-bold thz-text-primary" href="#">Ocean House</a>
+                                            <p class="thz-text-sm thz-font-normal thz-text-secondary">$3500</p>
+                                        </div>
+                                    </div>
+                                    <!-- feature-items-3 -->
+                                    <div class="thz-flex thz-gap-4">
+                                        <!-- features-img -->
+                                        <div>
+                                            <img class="thz-rounded thz-w-full" src="../img/feature/feature-3.png" alt="">
+                                        </div>
+                                        <!-- features-content -->
+                                        <div>
+                                            <a class="thz-text-sm thz-font-bold thz-text-primary" href="#">Ocean House</a>
+                                            <p class="thz-text-sm thz-font-normal thz-text-secondary">$3500</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- agent-section-end -->
+
+        <!-- footer-start -->
+        <footer class="thz-pt-10 lg:thz-pt-16 2xl:thz-pt-24 thz-bg-footerBg1">
+            <!-- container -->
+            <div class="thz-container thz-pb-10 lg:thz-pb-16 ">
+                <div class="thz-grid thz-grid-cols-1 sm:thz-grid-cols-2 lg:thz-grid-cols-4 thz-space-y-10 sm:thz-space-y-0 sm:thz-gap-10 xl:thz-gap-0">
+                    <!-- footer-logo -->
+                    <div class="thz-space-y-4 xl:thz-border-r thz-border-border2 md:thz-pr-10 lg:thz-pr-0 xl:thz-pr-10">
+                        <img src="../img/logos/black-logo.svg" alt="">
+                        <p class="thz-text-sm thz-font-normal thz-text-secondary">Finding my dream home was seamless home. Their dedicated team not only   unders my needs but exceeded expectation making home.ownership a reality.</p>
+                        <a href="#" class="demo-1-color thz-inline-flex thz-text-sm thz-text-primary thz-font-medium">Read more<i class="fi-arrow-up-right thz-text-[22px] thz-text-gray thz-ml-1"></i></a>
+                    </div>
+                    <!-- footer-contact -->
+                    <div class="lg:thz-pl-5 xl:thz-px-10 2xl:thz-pr-12 xl:thz-border-r thz-border-border2">
+                        <!-- title -->
+                        <h2 class="thz-text-lg thz-font-medium thz-text-primary thz-mb-5">Contact Us</h2>
+                        <!-- location -->
+                        <div class="thz-flex thz-gap-4 thz-border-b thz-border-border2 thz-pb-5 thz-mb-5">
+                            <i class="fi-map-pin thz-text-[22px] thz-mt-1"></i>
+                            <div>
+                                <p class="thz-text-sm thz-font-normal">65 Park avenue road</p>
+                                <p class="thz-text-sm thz-font-normal">North Florida, USA</p>
+                            </div>
+                        </div>
+                        <!-- contact -->
+                        <div class="thz-flex thz-gap-4 thz-border-b thz-border-border2 thz-pb-4 thz-mb-5">
+                            <i class="fi-phone-incoming thz-text-[22px] thz-mt-1"></i>
+                            <div>
+                                <h2 class="thz-text-sm thz-font-semibold thz-text-primary">Call now</h2>
+                                <p class="thz-text-sm thz-font-normal">(301) 987-0256</p>
+                            </div>
+                        </div>
+                        <!-- email -->
+                        <div class="thz-flex thz-gap-4">
+                            <i class="fi-email thz-text-[22px]"></i>
+                            <div>
+                                <h2 class="thz-text-sm thz-font-semibold thz-text-primary thz-leading-none">Email</h2>
+                                <p class="thz-text-sm thz-font-normal">home@themebeer.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer-link -->
+                    <div class="lg:thz-pl-7 xl:thz-pl-10 2xl:thz-pl-12 xl:thz-border-r thz-border-border2">
+                        <!-- title -->
+                        <h2 class="thz-text-lg thz-font-medium thz-text-primary thz-mb-4">Quick Links</h2>
+                        <!-- link -->
+                        <ul class="thz-space-y-2">
+                            <li><a class="thz-text-sm thz-font-normal" href="#">Terms of service</a></li>
+                            <li><a class="thz-text-sm thz-font-normal" href="#">Privacy Policy</a></li>
+                            <li><a class="thz-text-sm thz-font-normal" href="#">Pricing Plan</a></li>
+                            <li><a class="thz-text-sm thz-font-normal" href="#">FAQ</a></li>
+                            <li><a class="thz-text-sm thz-font-normal" href="#">Contact Us</a></li>
+                            <li><a class="thz-text-sm thz-font-normal" href="#">Career</a></li>
+                        </ul>
+                    </div>
+                    <!-- footer-social -->
+                    <div class="thz-space-y-4 xl:thz-pl-10 2xl:thz-pl-12">
+                        <!-- title -->
+                        <h2 class="thz-text-lg thz-font-medium thz-text-primary thz-mb-4">Get Connected</h2>
+                        <!-- form -->
+                        <form action="#" class="demo-1-color thz-relative">
+                            <input class="thz-w-full thz-py-2 thz-outline-none thz-bg-transparent thz-border-b thz-border-secondary focus:thz-border-brand thz-transition-all thz-duration-300 placeholder:thz-text-primary thz-font-semibold thz-text-sm" type="email" placeholder="Email address">
+                            <i class="fi-arrow-up-right thz-absolute thz-top-2 thz-right-0 thz-text-[22px] thz-text-gray"></i>
+                        </form>
+                        <p  class="thz-text-sm thz-font-normal">Finding my dream home was seamless me my needs but exceeded</p>
+                        <!-- social-icon -->
+                        <div class="thz-space-y-4">
+                            <h2 class="thz-text-lg thz-text-primary thz-font-medium">Social media</h2>
+                            <!-- social-link -->
+                            <div class="thz-flex thz-gap-5 thz-items-center">
+                                <a class="thz-inline-block thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="#"><i class="fi-facebook"></i></a>
+                                <a class="thz-inline-block thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="#"><i class="fi-linkedin"></i></a>
+                                <a class="thz-inline-block thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="#"><i class="fi-x"></i></a>
+                                <a class="thz-inline-block thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="#"><i class="fi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <!-- copyright -->
+            <div class="thz-border-t thz-border-border2">
+                <div class="thz-container thz-py-8 ">
+                    <p class="thz-text-sm thz-font-normal thz-text-center md:thz-text-left">© 2025 TheHouze. All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-end -->
+
+        <!-- modal-button -->
+        <button class="thz-fixed thz-top-[50%] thz-translate-y-[-50%] thz-right-0 thz-inline-flex thz-px-2.5 thz-py-2 thz-text-xs thz-text-white thz-font-medium thz-uppercase thz-bg-brand thz-z-[99999]" data-toggle="modal" data-target="popup">Demo</button>
+        <!-- modal-content -->
+        <div class="thz-fixed thz-inset-0 thz-w-full thz-h-screen thz-hidden modal thz-overflow-auto thz-z-[99999]" id="popup">
+            <div class="modal-backdrop thz-fixed thz-w-full thz-inset-0 thz-bg-black thz-opacity-20 thz-z-30" data-close>
+            </div>
+            <div class="thz-min-h-screen thz-flex thz-items-center thz-justify-center thz-relative thz-pointer-events-none thz-py-8 thz-px-4 thz-z-50">
+                <div class="thz-fixed thz-left-0 thz-right-0 thz-top-5 sm:thz-top-8 thz-bottom-5 sm:thz-bottom-8 thz-w-[calc(100vw-30px)] sm:thz-w-[calc(100vw-50px)] lg:thz-w-[calc(100vw-100px)] thz-overflow-x-hidden thz-overflow-y-scroll thz-overscroll-contain thz-bg-white thz-mx-auto thz-pointer-events-auto thz-rounded-md">
+                    <div class="thz-p-7 thz-py-4 thz-flex thz-justify-between thz-items-center thz-fixed thz-left-0 thz-right-0 thz-mx-auto thz-bg-white thz-w-[calc(100vw-30px)] sm:thz-w-[calc(100vw-50px)] lg:thz-w-[calc(100vw-100px)] thz-rounded-tl-md thz-rounded-tr-md">
+                        <h5 class="thz-mb-0 thz-text-xl thz-text-primary thz-font-bold thz-leading-none">10 Home Page</h5>
+                        <button class="thz-text-xl thz-text-primary thz-leading-none" data-close> <i class="fi-close"></i></button>
+                    </div>
+                    <div class="thz-p-7 thz-pt-16">
+                        <div class="thz-grid sm:thz-grid-cols-2 lg:thz-grid-cols-3 xl:thz-grid-cols-4 thz-gap-y-10 thz-gap-4">
+                            <!-- demo-1 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-1/./index.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-1.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-1/./index.html">Home-1</a>
+                            </div>
+                            <!-- demo-2 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-1/./index-2.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-2.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-1/./index-2.html">Home-2</a>
+                            </div>
+                            <!-- demo-3 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-2/./index.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-3.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-2/./index.html">Home-3</a>
+                            </div>
+                            <!-- demo-4 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-2/./index-2.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-4.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-2/./index-2.html">Home-4</a>
+                            </div>
+                            <!-- demo-5 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-3/./index.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-5.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-3/./index.html">Home-5</a>
+                            </div>
+                            <!-- demo-6 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-3/./index-2.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-6.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-3/./index-2.html">Home-6</a>
+                            </div>
+                            <!-- demo-7 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-4/./index.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-7.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-4/./index.html">Home-7</a>
+                            </div>
+                            <!-- demo-8 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-4/./index-2.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-8.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-4/./index-2.html">Home-8</a>
+                            </div>
+                            <!-- demo-9 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-5/./index.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-9.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-5/./index.html">Home-9</a>
+                            </div>
+                            <!-- demo-10 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-5/./index-2.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-10.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-5/./index-2.html">Home-10</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- js-here -->
+        <!-- ====================== -->
+        <!-- jquery-1.12.4.min.js -->
+        <script src="../js/jquery-1.12.4.min.js"></script>
+        <!-- select2.min.js -->
+        <script src="../js/select2.min.js"></script>
+        <!-- main.js -->
+        <script src="../js/main.js"></script>
+    </body>
+</html>

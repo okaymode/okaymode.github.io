@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- title -->
+        <title>The Houze</title>
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="../img/favicon/favicon-5.png">
+        <!-- css here -->
+        <!-- ========================== -->
+        <!-- finest-icon.css -->
+        <link rel="stylesheet" href="../css/finest-icon.css">
+        <!-- jquery-ui.css -->
+        <link rel="stylesheet" href="../css/jquery-ui.css">
+        <!-- select2.min.css -->
+        <link rel="stylesheet" href="../css/select2.min.css">
+        <!-- animate.css -->
+        <link rel="stylesheet" href="../css/animate.css">
+        <!-- main.css -->
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body class="select-style property-select property-select-five thz-font-roboto thz-text-secondary">
+        <!--Preloader Start-->
+        <div class="loader-wrapper">
+            <div class="lds-spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!--Preloader End-->
+
+        <!--Scroll UP Section Start-->
+        <div class="scroll-up scroll-up-color-five">
+            <svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
+        <!--Scroll UP Section End-->
+
+        <!-- thz-offcanvus-area-end -->
+        <!-- add calss name"left-right" to open offcanvas menu left to right -->
+        <div class="thz-offcanvas-area left-right">
+            <div class="thz-offcanvas-wrapper">
+                <div class="thz-offcanvas-top thz-flex thz-items-center thz-justify-between">
+                    <div class="thz-offcanvas-logo">
+                        <a href="index.html"><img src="../img/logos/green-logo.svg" alt=""></a>
+                    </div>
+                    <div class="thz-offcanvas-close">
+                        <button class="thz-offcanvas-close-btn thz-text-xl">
+                            <i class="fi-close"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="thz-offcanvas-main thz-offcanvas-style-5">
+                    <div class="thz-offcanvas-content">
+                        <h3 class="thz-offcanvas-title">Hello There!</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+                    </div>
+                    <div class="thz-offcanvas-menu lg:thz-hidden">
+                        <nav></nav>
+                    </div>
+                    <div class="thz-offcanvas-contact">
+                        <h3 class="thz-offcanvas-title sm">Information</h3>
+                        <ul>
+                            <li><a href="#">+ 4 20 7700 1007</a></li>
+                            <li><a href="#">hello@houzey.com</a></li>
+                            <li><a href="#">65 Park Avenue, Florida, USA</a></li>
+                        </ul>
+                    </div>
+                    <div class="thz-offcanvas-button">
+                        <!-- login -->
+                        <div class="thz-flex thz-flex-col xs:thz-flex-row thz-gap-5 thz-items-center thz-justify-between">
+                            <!-- thz-account-btn -->
+                            <a class="thz-flex thz-items-center thz-justify-center thz-gap-2 thz-text-base thz-text-primary thz-font-medium thz-relative hover:thz-text-green thz-transition-all" href="#"><span class="thz-inline-block"><i class="fi-user thz-text-[22px]"></i></span>My Account</a>
+                            <!-- add-property-btn -->
+                            <a class="thz-font-medium thz-text-base thz-text-white thz-bg-green thz-w-full xs:thz-w-[148px] thz-h-[42px] thz-flex thz-items-center thz-justify-center thz-rounded" href="#">+ Add Property</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body-overlay"></div>
+        <!-- thz-offcanvus-area-end -->
+
+        <!-- header-start -->
+        <header class="main-header lg:thz-border-b thz-border-border1">
+            <div class="thz-container-fluid thz-mx-auto xs:thz-w-[400px] sm:thz-w-[540px] md:thz-w-[720px] lg:thz-w-[960px] xl:thz-w-[1200px] 2xl:thz-w-[1400px] thz-px-[15px] thz-flex thz-justify-between thz-items-center thz-relative thz-py-5">
+                <!-- logo -->
+                <a href="index.html"><img src="../img/logos/green-logo.svg" alt=""></a>
+                <!-- menu -->
+                <div class="thz-flex thz-items-center thz-gap-6 xl:thz-gap-24">
+                    <div class=" thz-hidden lg:thz-block">
+                        <!-- main-menu -->
+                        <nav class="thz-mobile-menu-active main-menu main-menu-style-5">
+                            <ul class="lg:thz-flex lg:thz-items-center lg:thz-gap-7 xl:thz-gap-10">
+                                <li class="thz-relative thz-group">
+                                    <a class="thz-font-medium thz-text-base thz-text-primary hover:thz-text-green thz-transition-all" href="#">Home</a>
+                                    <!-- sub-menu -->
+                                    <ul class="thz-submenu lg:thz-absolute lg:thz-top-[250%] lg:thz-left-0 lg:thz-w-[230px] lg:thz-bg-white lg:thz-rounded-sm lg:thz-py-6 lg:thz-px-7 lg:thz-space-y-3 lg:thz-z-20 lg:thz-opacity-0 lg:thz-invisible group-hover:lg:thz-opacity-100 group-hover:lg:thz-visible group-hover:lg:thz-top-[220%] lg:thz-transition-all lg:thz-duration-300">
+                                        <li><a href="index.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-green thz-transition-all">Home One</a></li>
+                                        <li><a href="index-2.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-green thz-transition-all">Home Two</a></li>
+                                    </ul>
+                                </li>
+                                <li class="thz-relative thz-group">
+                                    <a class="thz-font-medium thz-text-base thz-text-primary hover:thz-text-green thz-transition-all" href="#">Real Estate</a>
+                                    <!-- sub-menu -->
+                                    <ul class="thz-submenu lg:thz-absolute lg:thz-top-[250%] lg:thz-left-0 lg:thz-w-[230px] lg:thz-bg-white lg:thz-rounded-sm lg:thz-py-6 lg:thz-px-7 lg:thz-space-y-3 lg:thz-z-20 lg:thz-opacity-0 lg:thz-invisible group-hover:lg:thz-opacity-100 group-hover:lg:thz-visible group-hover:lg:thz-top-[220%] lg:thz-transition-all lg:thz-duration-300">
+                                        <li><a href="properties.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-green thz-transition-all">Properties Grid Layout</a></li>
+                                        <li><a href="properties-list.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-green thz-transition-all">Properties List Layout</a></li>
+                                        <li><a href="properties.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-green thz-transition-all">Properties Left Sidebar</a></li>
+                                        <li><a href="properties-right-sidebar.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-green thz-transition-all">Properties Right Sidebar</a></li>
+                                        <li><a href="search.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-green thz-transition-all">Properties Half map</a></li>
+                                        <li><a href="agent-1.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-green thz-transition-all">Agent Layout 1</a></li>
+                                        <li><a href="agent-2.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-green thz-transition-all">Agent Layout 2</a></li>
+                                        <li><a href="agent-single.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-green thz-transition-all">Agent Single</a></li>
+                                    </ul>
+                                </li>
+                                <li class="thz-relative thz-group">
+                                    <a class="thz-font-medium thz-text-base thz-text-primary hover:thz-text-green thz-transition-all" href="#">Single Property</a>
+                                    <!-- sub-menu -->
+                                    <ul class="thz-submenu lg:thz-absolute lg:thz-top-[250%] lg:thz-left-0 lg:thz-w-[230px] lg:thz-bg-white lg:thz-rounded-sm lg:thz-py-6 lg:thz-px-7 lg:thz-space-y-3 lg:thz-z-20 lg:thz-opacity-0 lg:thz-invisible group-hover:lg:thz-opacity-100 group-hover:lg:thz-visible group-hover:lg:thz-top-[220%] lg:thz-transition-all lg:thz-duration-300">
+                                        <li class="thz-relative">
+                                            <a href="single-property.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-green thz-transition-all">Layout One</a>
+                                            <!-- sub-menu -->
+                                            <ul class="thz-submenu sub-menu-3 lg:thz-absolute lg:!thz-top-0 lg:thz-left-[100%] lg:thz-w-[230px] lg:thz-bg-white lg:thz-rounded-sm lg:thz-py-6 lg:thz-px-7 lg:thz-space-y-3 lg:thz-z-20 lg:thz-transition-all lg:thz-duration-300">
+                                                <li><a href="#" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-green thz-transition-all">Grid One</a></li>
+                                                <li><a href="#" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-green thz-transition-all">Grid Two</a></li>
+                                                <li><a href="#" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-green thz-transition-all">Grid Three</a></li>
+                                                <li><a href="#" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-green thz-transition-all">Grid Four</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="single-property-2.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-green thz-transition-all">Layout Two</a></li>
+                                        <li><a href="single-property-3.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-green thz-transition-all">Layout Three</a></li>
+                                        <li><a href="single-property-4.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-green thz-transition-all">Layout Four</a></li>
+                                    </ul>
+                                </li>
+                                <li class="thz-relative thz-group">
+                                    <a class="thz-font-medium thz-text-base thz-text-primary hover:thz-text-green thz-transition-all" href="#">Blog</a>
+                                    <!-- sub-menu -->
+                                    <ul class="thz-submenu lg:thz-absolute lg:thz-top-[250%] lg:thz-left-0 lg:thz-w-[230px] lg:thz-bg-white lg:thz-rounded-sm lg:thz-py-6 lg:thz-px-7 lg:thz-space-y-3 lg:thz-z-20 lg:thz-opacity-0 lg:thz-invisible group-hover:lg:thz-opacity-100 group-hover:lg:thz-visible group-hover:lg:thz-top-[220%] lg:thz-transition-all lg:thz-duration-300">
+                                        <li><a href="blog.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-green thz-transition-all">Blog</a></li>
+                                        <li><a href="blog-single.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-green thz-transition-all">Blog Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="thz-font-medium thz-text-base thz-text-primary hover:thz-text-green thz-transition-all" href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="thz-hidden lg:thz-block">
+                        <!-- login -->
+                        <ul class="thz-flex thz-items-center thz-gap-6 xl:thz-gap-10">
+                            <li class="thz-relative thz-group">
+                                <a class="thz-flex thz-items-center thz-gap-2 thz-text-base thz-text-primary thz-font-medium thz-relative hover:thz-text-green thz-transition-all" href="#"><span class="thz-inline-block"><i class="fi-user thz-text-[22px]"></i></span>My Account</a>
+                                <!-- drop-down -->
+                                <ul class="thz-absolute thz-top-[250%] thz-left-0 thz-w-[230px] thz-bg-white lg:thz-rounded-sm thz-py-5 thz-pl-4 thz-z-10 custom-shadow-3 thz-opacity-0 thz-invisible group-hover:thz-opacity-100 group-hover:thz-top-[200%] group-hover:thz-visible thz-transition-all thz-duration-300">
+                                    <li><a href="#" class="thz-text-primary thz-text-[14px] thz-font-normal thz-flex thz-items-center hover:thz-text-green thz-transition-all"><span class="thz-inline-block thz-mr-2"><i class="fi-heart"></i></span>My Favourites</a></li>
+                                </ul>
+                            </li>
+                            <li> <a class="thz-font-medium thz-text-base thz-text-white thz-bg-green thz-py-2.5 thz-px-6 thz-rounded thz-inline-block" href="#">+ Add Property</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- thz-offcanvas-open-btn -->
+                <button class="thz-offcanvas-open-btn thz-text-xl thz-text-primary lg:thz-hidden">
+                    <i class="fi-menu"></i>
+                </button>
+            </div>
+        </header>
+        <!-- header-end -->
+        
+        <!-- Breadcrumb-section-start -->
+        <section class="thz-py-20 md:thz-py-28 thz-text-center">
+            <!-- title -->
+            <h3 class="thz-text-3xl thz-text-primary md:thz-text-4xl lg:thz-text-5xl thz-font-extrabold thz-z-10"><span class="thz-text-green">Listing</span> Page</h3>
+            <!-- Breadcrumb -->
+            <ul class="thz-flex thz-items-center thz-justify-center thz-gap-2 thz-pt-4 thz-z-10">
+                <li><a class="thz-text-sm thz-font-normal thz-text-primary" href="index.html">Home</a></li>
+                <li><i class="fi-chevron-right thz-text-xs thz-text-primary thz-font-normal"></i></li>
+                <li><span class="thz-text-sm thz-font-normal thz-text-primary">Listing Right Sidebar</span></li>
+            </ul>  
+        </section>
+        <!-- Breadcrumb-section-end -->
+
+        <!-- Listing page section-start -->
+        <section class="thz-container thz-pb-10 lg:thz-pb-16 xl:thz-pb-24">
+            <!-- blog-discription -->
+            <div class="thz-grid thz-grid-cols-1 md:thz-grid-cols-2 lg:thz-grid-cols-3 xl:thz-grid-cols-4 thz-gap-8 2xl:thz-gap-12">
+                <div class="thz-col-span-1 md:thz-col-span-4 xl:thz-col-span-3">
+                    <!-- listing-header -->
+                    <div class="thz-flex thz-flex-col sm:thz-flex-row thz-gap-6 thz-justify-between thz-items-center thz-p-5 thz-border thz-border-border3 thz-rounded-lg thz-mb-10">
+                        <!-- listing-header-left -->
+                        <p class="thz-text-primary thz-font-normal thz-text-sm">Showing 12 of 21 Results</p>
+                        <!-- listing-header-right -->
+                        <div class="thz-flex thz-flex-col xs:thz-flex-row thz-items-center thz-gap-6 md:thz-gap-8">
+                            <div class="thz-w-[186px] thz-flex thz-items-center thz-gap-2">
+                                <span class="thz-text-primary"><i class="fi-sort-arrow"></i>
+                                </span>
+                                <select class="select thz-text-sm thz-text-primary thz-font-medium thz-pl-1 thz-pr-6 thz-py-1">
+                                    <option value="1">Recently Added</option>
+                                    <option value="2">Newest</option>
+                                    <option value="3">Best Seller</option>
+                                    <option value="4">Best Match</option>
+                                    <option value="5">Price Low</option>
+                                    <option value="6">Price High</option>
+                                </select>
+                            </div>
+                            <!-- tab -->
+                            <ul id="filter-tab" class="filter-tab-7 thz-flex thz-items-center thz-gap-4">
+                                <li>
+                                    <a id="tab-1" href="#" class="thz-text-xl thz-text-primary thz-font-bold hover:thz-text-green thz-transition-all"><i class="fi-list"></i></a>
+                                </li>
+                                <li>
+                                    <a id="tab-2" href="#" class="active thz-text-xl thz-text-primary thz-font-bold hover:thz-text-green thz-transition-all"><i class="fi-grid"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- list-view -->
+                    <div id="tab-1-body" class="list-view hidden tab-body thz-space-y-7">
+                        <!-- list-view-1 -->
+                        <div class="thz-flex thz-flex-col md:thz-flex-row md:thz-items-center thz-gap-4 md:thz-gap-8 thz-bg-white custom-shadow-4 thz-p-4 md:thz-p-8 thz-rounded-lg">
+                            <!-- features-img -->
+                            <div class="thz-relative thz-group image-width">
+                                <a class="hover-effect thz-block" href="single-property-2.html"><img class="thz-w-full thz-rounded-lg" src="../img/property/property-4.webp" alt=""></a>
+                                <!-- button -->
+                                <div class="thz-flex thz-gap-1 thz-absolute thz-top-5 thz-left-6">
+                                    <span class="thz-bg-green thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-white thz-font-normal thz-leading-none">Featured</span>
+                                    <span class="thz-border thz-border-[#FFFFFF]/15 thz-bg-[#FFFFFF]/60 thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-primary thz-font-normal thz-leading-none">Sell</span>
+                                </div>
+                            </div>
+                            <!-- features-content -->
+                            <div class="thz-w-full calc-width">
+                                <div class="thz-flex thz-flex-col sm:thz-flex-row sm:thz-justify-between sm:thz-items-center thz-gap-3 thz-mb-5 sm:thz-mb-2">
+                                    <a class="thz-inline-block thz-text-lg thz-font-medium thz-text-primary hover:thz-text-green thz-transition-all" href="single-property-2.html">Green heaven</a>
+                                    <ul class="thz-flex thz-gap-2 thz-items-center">
+                                        <li class="thz-group"><a class="thz-inline-block thz-border thz-border-border3 thz-rounded thz-px-2 thz-py-1 group-hover:thz-bg-green group-hover:thz-border-green thz-transition-all" href="#"><i class="fi-heart thz-text-primary group-hover:thz-text-white thz-transition-all"></i></a></li>
+                                        <li class="thz-group"><a class="thz-inline-block thz-border thz-border-border3 thz-rounded thz-px-2 thz-py-1 group-hover:thz-bg-green group-hover:thz-border-green thz-transition-all" href="#"><i class="fi-share thz-text-primary group-hover:thz-text-white thz-transition-all"></i></a></li>
+                                        <li class="thz-group"><a class="thz-inline-block thz-border thz-border-border3 thz-rounded thz-px-2 thz-py-1 group-hover:thz-bg-green group-hover:thz-border-green thz-transition-all" href="#"><i class="fi-plus thz-text-primary group-hover:thz-text-white thz-transition-all"></i></a></li>
+                                    </ul>
+                                </div>
+                                <h3 class="thz-text-base thz-text-green thz-font-semibold thz-mb-5">$3500</h3>
+                                <p class="thz-text-xs thz-text-primary thz-font-normal thz-mb-2">Apartments</p>
+                                <ul class="thz-flex thz-gap-4 thz-mb-5">
+                                    <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bed thz-text-primary"></i><span class="thz-text-sm thz-text-primary thz-font-normal">4 Beds</span></li>
+                                    <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bath thz-text-primary"></i><span class="thz-text-sm thz-text-primary thz-font-normal">2 Baths</span></li>
+                                    <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-edit-scale thz-text-primary"></i><span class="thz-text-sm thz-text-primary thz-font-normal">950 Sqft</span></li>
+                                </ul>
+                                <div class="thz-flex thz-flex-col sm:thz-flex-row thz-gap-3 sm:thz-justify-between sm:thz-items-center">
+                                    <p class="thz-text-sm thz-font-normal thz-border-t thz-border-border3 thz-text-primary thz-pt-5 thz-flex thz-items-center"><i class="fi-map-pin thz-text-green thz-mr-2"></i> 65 Park Avenue, Florida</p>
+                                    <a class="thz-group thz-font-medium thz-text-base thz-text-center thz-text-white thz-bg-green thz-w-[130px] thz-py-2.5 thz-px-3 thz-pl-5 thz-rounded thz-flex thz-items-center thz-justify-center" href="#">Details <i class="fi-arrow-up-right thz-text-[22px] thz-text-white thz-ml-1 thz-rotate-0 group-hover:thz-rotate-45 thz-transition-all thz-duration-300"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- list-view-2 -->
+                        <div class="thz-flex thz-flex-col md:thz-flex-row md:thz-items-center thz-gap-4     md:thz-gap-8 thz-bg-white custom-shadow-4 thz-p-4 md:thz-p-8 thz-rounded-lg">
+                            <!-- features-img -->
+                            <div class="thz-relative thz-group image-width">
+                                <a class="hover-effect thz-block" href="single-property-2.html"><img class="thz-w-full thz-rounded-lg" src="../img/property/property-3.webp" alt=""></a>
+                                <!-- button -->
+                                <div class="thz-flex thz-gap-1 thz-absolute thz-top-5 thz-left-6">
+                                    <span class="thz-bg-green thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-white thz-font-normal thz-leading-none">Featured</span>
+                                    <span class="thz-border thz-border-[#FFFFFF]/15 thz-bg-[#FFFFFF]/60 thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-primary thz-font-normal thz-leading-none">Sell</span>
+                                </div>
+                            </div>
+                            <!-- features-content -->
+                            <div class="thz-w-full calc-width">
+                                <div class="thz-flex thz-flex-col sm:thz-flex-row sm:thz-justify-between sm:thz-items-center thz-gap-3 thz-mb-5 sm:thz-mb-2">
+                                    <a class="thz-inline-block thz-text-lg thz-font-medium thz-text-primary hover:thz-text-green thz-transition-all" href="single-property-2.html">Green heaven</a>
+                                    <ul class="thz-flex thz-gap-2 thz-items-center">
+                                        <li class="thz-group"><a class="thz-inline-block thz-border thz-border-border3 thz-rounded thz-px-2 thz-py-1 group-hover:thz-bg-green group-hover:thz-border-green thz-transition-all" href="#"><i class="fi-heart thz-text-primary group-hover:thz-text-white thz-transition-all"></i></a></li>
+                                        <li class="thz-group"><a class="thz-inline-block thz-border thz-border-border3 thz-rounded thz-px-2 thz-py-1 group-hover:thz-bg-green group-hover:thz-border-green thz-transition-all" href="#"><i class="fi-share thz-text-primary group-hover:thz-text-white thz-transition-all"></i></a></li>
+                                        <li class="thz-group"><a class="thz-inline-block thz-border thz-border-border3 thz-rounded thz-px-2 thz-py-1 group-hover:thz-bg-green group-hover:thz-border-green thz-transition-all" href="#"><i class="fi-plus thz-text-primary group-hover:thz-text-white thz-transition-all"></i></a></li>
+                                    </ul>
+                                </div>
+                                <h3 class="thz-text-base thz-text-green thz-font-semibold thz-mb-5">$3500</h3>
+                                <p class="thz-text-xs thz-text-primary thz-font-normal thz-mb-2">Apartments</p>
+                                <ul class="thz-flex thz-gap-4 thz-mb-5">
+                                    <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bed thz-text-primary"></i><span class="thz-text-sm thz-text-primary thz-font-normal">4 Beds</span></li>
+                                    <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bath thz-text-primary"></i><span class="thz-text-sm thz-text-primary thz-font-normal">2 Baths</span></li>
+                                    <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-edit-scale thz-text-primary"></i><span class="thz-text-sm thz-text-primary thz-font-normal">950 Sqft</span></li>
+                                </ul>
+                                <div class="thz-flex thz-flex-col sm:thz-flex-row thz-gap-3 sm:thz-justify-between sm:thz-items-center">
+                                    <p class="thz-text-sm thz-font-normal thz-border-t thz-border-border3 thz-text-primary thz-pt-5 thz-flex thz-items-center"><i class="fi-map-pin thz-text-green thz-mr-2"></i> 65 Park Avenue, Florida</p>
+                                    <a class="thz-group thz-font-medium thz-text-base thz-text-center thz-text-white thz-bg-green thz-w-[130px] thz-py-2.5 thz-px-3 thz-pl-5 thz-rounded thz-flex thz-items-center thz-justify-center" href="#">Details <i class="fi-arrow-up-right thz-text-[22px] thz-text-white thz-ml-1 thz-rotate-0 group-hover:thz-rotate-45 thz-transition-all thz-duration-300"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- list-view-3 -->
+                        <div class="thz-flex thz-flex-col md:thz-flex-row md:thz-items-center thz-gap-4     md:thz-gap-8 thz-bg-white custom-shadow-4 thz-p-4 md:thz-p-8 thz-rounded-lg">
+                            <!-- features-img -->
+                            <div class="thz-relative thz-group image-width">
+                                <a class="hover-effect thz-block" href="single-property-2.html"><img class="thz-w-full thz-rounded-lg" src="../img/property/property-8.webp" alt=""></a>
+                                <!-- button -->
+                                <div class="thz-flex thz-gap-1 thz-absolute thz-top-5 thz-left-6">
+                                    <span class="thz-bg-green thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-white thz-font-normal thz-leading-none">Featured</span>
+                                    <span class="thz-border thz-border-[#FFFFFF]/15 thz-bg-[#FFFFFF]/60 thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-primary thz-font-normal thz-leading-none">Sell</span>
+                                </div>
+                            </div>
+                            <!-- features-content -->
+                            <div class="thz-w-full calc-width">
+                                <div class="thz-flex thz-flex-col sm:thz-flex-row sm:thz-justify-between sm:thz-items-center thz-gap-3 thz-mb-5 sm:thz-mb-2">
+                                    <a class="thz-inline-block thz-text-lg thz-font-medium thz-text-primary hover:thz-text-green thz-transition-all" href="single-property-2.html">Green heaven</a>
+                                    <ul class="thz-flex thz-gap-2 thz-items-center">
+                                        <li class="thz-group"><a class="thz-inline-block thz-border thz-border-border3 thz-rounded thz-px-2 thz-py-1 group-hover:thz-bg-green group-hover:thz-border-green thz-transition-all" href="#"><i class="fi-heart thz-text-primary group-hover:thz-text-white thz-transition-all"></i></a></li>
+                                        <li class="thz-group"><a class="thz-inline-block thz-border thz-border-border3 thz-rounded thz-px-2 thz-py-1 group-hover:thz-bg-green group-hover:thz-border-green thz-transition-all" href="#"><i class="fi-share thz-text-primary group-hover:thz-text-white thz-transition-all"></i></a></li>
+                                        <li class="thz-group"><a class="thz-inline-block thz-border thz-border-border3 thz-rounded thz-px-2 thz-py-1 group-hover:thz-bg-green group-hover:thz-border-green thz-transition-all" href="#"><i class="fi-plus thz-text-primary group-hover:thz-text-white thz-transition-all"></i></a></li>
+                                    </ul>
+                                </div>
+                                <h3 class="thz-text-base thz-text-green thz-font-semibold thz-mb-5">$3500</h3>
+                                <p class="thz-text-xs thz-text-primary thz-font-normal thz-mb-2">Apartments</p>
+                                <ul class="thz-flex thz-gap-4 thz-mb-5">
+                                    <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bed thz-text-primary"></i><span class="thz-text-sm thz-text-primary thz-font-normal">4 Beds</span></li>
+                                    <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bath thz-text-primary"></i><span class="thz-text-sm thz-text-primary thz-font-normal">2 Baths</span></li>
+                                    <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-edit-scale thz-text-primary"></i><span class="thz-text-sm thz-text-primary thz-font-normal">950 Sqft</span></li>
+                                </ul>
+                                <div class="thz-flex thz-flex-col sm:thz-flex-row thz-gap-3 sm:thz-justify-between sm:thz-items-center">
+                                    <p class="thz-text-sm thz-font-normal thz-border-t thz-border-border3 thz-text-primary thz-pt-5 thz-flex thz-items-center"><i class="fi-map-pin thz-text-green thz-mr-2"></i> 65 Park Avenue, Florida</p>
+                                    <a class="thz-group thz-font-medium thz-text-base thz-text-center thz-text-white thz-bg-green thz-w-[130px] thz-py-2.5 thz-px-3 thz-pl-5 thz-rounded thz-flex thz-items-center thz-justify-center" href="#">Details <i class="fi-arrow-up-right thz-text-[22px] thz-text-white thz-ml-1 thz-rotate-0 group-hover:thz-rotate-45 thz-transition-all thz-duration-300"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- list-view-4 -->
+                        <div class="thz-flex thz-flex-col md:thz-flex-row md:thz-items-center thz-gap-4     md:thz-gap-8 thz-bg-white custom-shadow-4 thz-p-4 md:thz-p-8 thz-rounded-lg">
+                            <!-- features-img -->
+                            <div class="thz-relative thz-group image-width">
+                                <a class="hover-effect thz-block" href="single-property-2.html"><img class="thz-w-full thz-rounded-lg" src="../img/property/property-7.webp" alt=""></a>
+                                <!-- button -->
+                                <div class="thz-flex thz-gap-1 thz-absolute thz-top-5 thz-left-6">
+                                    <span class="thz-bg-green thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-white thz-font-normal thz-leading-none">Featured</span>
+                                    <span class="thz-border thz-border-[#FFFFFF]/15 thz-bg-[#FFFFFF]/60 thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-primary thz-font-normal thz-leading-none">Sell</span>
+                                </div>
+                            </div>
+                            <!-- features-content -->
+                            <div class="thz-w-full calc-width">
+                                <div class="thz-flex thz-flex-col sm:thz-flex-row sm:thz-justify-between sm:thz-items-center thz-gap-3 thz-mb-5 sm:thz-mb-2">
+                                    <a class="thz-inline-block thz-text-lg thz-font-medium thz-text-primary hover:thz-text-green thz-transition-all" href="single-property-2.html">Green heaven</a>
+                                    <ul class="thz-flex thz-gap-2 thz-items-center">
+                                        <li class="thz-group"><a class="thz-inline-block thz-border thz-border-border3 thz-rounded thz-px-2 thz-py-1 group-hover:thz-bg-green group-hover:thz-border-green thz-transition-all" href="#"><i class="fi-heart thz-text-primary group-hover:thz-text-white thz-transition-all"></i></a></li>
+                                        <li class="thz-group"><a class="thz-inline-block thz-border thz-border-border3 thz-rounded thz-px-2 thz-py-1 group-hover:thz-bg-green group-hover:thz-border-green thz-transition-all" href="#"><i class="fi-share thz-text-primary group-hover:thz-text-white thz-transition-all"></i></a></li>
+                                        <li class="thz-group"><a class="thz-inline-block thz-border thz-border-border3 thz-rounded thz-px-2 thz-py-1 group-hover:thz-bg-green group-hover:thz-border-green thz-transition-all" href="#"><i class="fi-plus thz-text-primary group-hover:thz-text-white thz-transition-all"></i></a></li>
+                                    </ul>
+                                </div>
+                                <h3 class="thz-text-base thz-text-green thz-font-semibold thz-mb-5">$3500</h3>
+                                <p class="thz-text-xs thz-text-primary thz-font-normal thz-mb-2">Apartments</p>
+                                <ul class="thz-flex thz-gap-4 thz-mb-5">
+                                    <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bed thz-text-primary"></i><span class="thz-text-sm thz-text-primary thz-font-normal">4 Beds</span></li>
+                                    <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bath thz-text-primary"></i><span class="thz-text-sm thz-text-primary thz-font-normal">2 Baths</span></li>
+                                    <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-edit-scale thz-text-primary"></i><span class="thz-text-sm thz-text-primary thz-font-normal">950 Sqft</span></li>
+                                </ul>
+                                <div class="thz-flex thz-flex-col sm:thz-flex-row thz-gap-3 sm:thz-justify-between sm:thz-items-center">
+                                    <p class="thz-text-sm thz-font-normal thz-border-t thz-border-border3 thz-text-primary thz-pt-5 thz-flex thz-items-center"><i class="fi-map-pin thz-text-green thz-mr-2"></i> 65 Park Avenue, Florida</p>
+                                    <a class="thz-group thz-font-medium thz-text-base thz-text-center thz-text-white thz-bg-green thz-w-[130px] thz-py-2.5 thz-px-3 thz-pl-5 thz-rounded thz-flex thz-items-center thz-justify-center" href="#">Details <i class="fi-arrow-up-right thz-text-[22px] thz-text-white thz-ml-1 thz-rotate-0 group-hover:thz-rotate-45 thz-transition-all thz-duration-300"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- list-view-5 -->
+                        <div class="thz-flex thz-flex-col md:thz-flex-row md:thz-items-center thz-gap-4     md:thz-gap-8 thz-bg-white custom-shadow-4 thz-p-4 md:thz-p-8 thz-rounded-lg">
+                            <!-- features-img -->
+                            <div class="thz-relative thz-group image-width">
+                                <a class="hover-effect thz-block" href="single-property-2.html"><img class="thz-w-full thz-rounded-lg" src="../img/property/property-6.webp" alt=""></a>
+                                <!-- button -->
+                                <div class="thz-flex thz-gap-1 thz-absolute thz-top-5 thz-left-6">
+                                    <span class="thz-bg-green thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-white thz-font-normal thz-leading-none">Featured</span>
+                                    <span class="thz-border thz-border-[#FFFFFF]/15 thz-bg-[#FFFFFF]/60 thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-primary thz-font-normal thz-leading-none">Sell</span>
+                                </div>
+                            </div>
+                            <!-- features-content -->
+                            <div class="thz-w-full calc-width">
+                                <div class="thz-flex thz-flex-col sm:thz-flex-row sm:thz-justify-between sm:thz-items-center thz-gap-3 thz-mb-5 sm:thz-mb-2">
+                                    <a class="thz-inline-block thz-text-lg thz-font-medium thz-text-primary hover:thz-text-green thz-transition-all" href="single-property-2.html">Green heaven</a>
+                                    <ul class="thz-flex thz-gap-2 thz-items-center">
+                                        <li class="thz-group"><a class="thz-inline-block thz-border thz-border-border3 thz-rounded thz-px-2 thz-py-1 group-hover:thz-bg-green group-hover:thz-border-green thz-transition-all" href="#"><i class="fi-heart thz-text-primary group-hover:thz-text-white thz-transition-all"></i></a></li>
+                                        <li class="thz-group"><a class="thz-inline-block thz-border thz-border-border3 thz-rounded thz-px-2 thz-py-1 group-hover:thz-bg-green group-hover:thz-border-green thz-transition-all" href="#"><i class="fi-share thz-text-primary group-hover:thz-text-white thz-transition-all"></i></a></li>
+                                        <li class="thz-group"><a class="thz-inline-block thz-border thz-border-border3 thz-rounded thz-px-2 thz-py-1 group-hover:thz-bg-green group-hover:thz-border-green thz-transition-all" href="#"><i class="fi-plus thz-text-primary group-hover:thz-text-white thz-transition-all"></i></a></li>
+                                    </ul>
+                                </div>
+                                <h3 class="thz-text-base thz-text-green thz-font-semibold thz-mb-5">$3500</h3>
+                                <p class="thz-text-xs thz-text-primary thz-font-normal thz-mb-2">Apartments</p>
+                                <ul class="thz-flex thz-gap-4 thz-mb-5">
+                                    <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bed thz-text-primary"></i><span class="thz-text-sm thz-text-primary thz-font-normal">4 Beds</span></li>
+                                    <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bath thz-text-primary"></i><span class="thz-text-sm thz-text-primary thz-font-normal">2 Baths</span></li>
+                                    <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-edit-scale thz-text-primary"></i><span class="thz-text-sm thz-text-primary thz-font-normal">950 Sqft</span></li>
+                                </ul>
+                                <div class="thz-flex thz-flex-col sm:thz-flex-row thz-gap-3 sm:thz-justify-between sm:thz-items-center">
+                                    <p class="thz-text-sm thz-font-normal thz-border-t thz-border-border3 thz-text-primary thz-pt-5 thz-flex thz-items-center"><i class="fi-map-pin thz-text-green thz-mr-2"></i> 65 Park Avenue, Florida</p>
+                                    <a class="thz-group thz-font-medium thz-text-base thz-text-center thz-text-white thz-bg-green thz-w-[130px] thz-py-2.5 thz-px-3 thz-pl-5 thz-rounded thz-flex thz-items-center thz-justify-center" href="#">Details <i class="fi-arrow-up-right thz-text-[22px] thz-text-white thz-ml-1 thz-rotate-0 group-hover:thz-rotate-45 thz-transition-all thz-duration-300"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- list-view-6 -->
+                        <div class="thz-flex thz-flex-col md:thz-flex-row md:thz-items-center thz-gap-4     md:thz-gap-8 thz-bg-white custom-shadow-4 thz-p-4 md:thz-p-8 thz-rounded-lg">
+                            <!-- features-img -->
+                            <div class="thz-relative thz-group image-width">
+                                <a class="hover-effect thz-block" href="single-property-2.html"><img class="thz-w-full thz-rounded-lg" src="../img/property/property-5.webp" alt=""></a>
+                                <!-- button -->
+                                <div class="thz-flex thz-gap-1 thz-absolute thz-top-5 thz-left-6">
+                                    <span class="thz-bg-green thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-white thz-font-normal thz-leading-none">Featured</span>
+                                    <span class="thz-border thz-border-[#FFFFFF]/15 thz-bg-[#FFFFFF]/60 thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-primary thz-font-normal thz-leading-none">Sell</span>
+                                </div>
+                            </div>
+                            <!-- features-content -->
+                            <div class="thz-w-full calc-width">
+                                <div class="thz-flex thz-flex-col sm:thz-flex-row sm:thz-justify-between sm:thz-items-center thz-gap-3 thz-mb-5 sm:thz-mb-2">
+                                    <a class="thz-inline-block thz-text-lg thz-font-medium thz-text-primary hover:thz-text-green thz-transition-all" href="single-property-2.html">Green heaven</a>
+                                    <ul class="thz-flex thz-gap-2 thz-items-center">
+                                        <li class="thz-group"><a class="thz-inline-block thz-border thz-border-border3 thz-rounded thz-px-2 thz-py-1 group-hover:thz-bg-green group-hover:thz-border-green thz-transition-all" href="#"><i class="fi-heart thz-text-primary group-hover:thz-text-white thz-transition-all"></i></a></li>
+                                        <li class="thz-group"><a class="thz-inline-block thz-border thz-border-border3 thz-rounded thz-px-2 thz-py-1 group-hover:thz-bg-green group-hover:thz-border-green thz-transition-all" href="#"><i class="fi-share thz-text-primary group-hover:thz-text-white thz-transition-all"></i></a></li>
+                                        <li class="thz-group"><a class="thz-inline-block thz-border thz-border-border3 thz-rounded thz-px-2 thz-py-1 group-hover:thz-bg-green group-hover:thz-border-green thz-transition-all" href="#"><i class="fi-plus thz-text-primary group-hover:thz-text-white thz-transition-all"></i></a></li>
+                                    </ul>
+                                </div>
+                                <h3 class="thz-text-base thz-text-green thz-font-semibold thz-mb-5">$3500</h3>
+                                <p class="thz-text-xs thz-text-primary thz-font-normal thz-mb-2">Apartments</p>
+                                <ul class="thz-flex thz-gap-4 thz-mb-5">
+                                    <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bed thz-text-primary"></i><span class="thz-text-sm thz-text-primary thz-font-normal">4 Beds</span></li>
+                                    <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bath thz-text-primary"></i><span class="thz-text-sm thz-text-primary thz-font-normal">2 Baths</span></li>
+                                    <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-edit-scale thz-text-primary"></i><span class="thz-text-sm thz-text-primary thz-font-normal">950 Sqft</span></li>
+                                </ul>
+                                <div class="thz-flex thz-flex-col sm:thz-flex-row thz-gap-3 sm:thz-justify-between sm:thz-items-center">
+                                    <p class="thz-text-sm thz-font-normal thz-border-t thz-border-border3 thz-text-primary thz-pt-5 thz-flex thz-items-center"><i class="fi-map-pin thz-text-green thz-mr-2"></i> 65 Park Avenue, Florida</p>
+                                    <a class="thz-group thz-font-medium thz-text-base thz-text-center thz-text-white thz-bg-green thz-w-[130px] thz-py-2.5 thz-px-3 thz-pl-5 thz-rounded thz-flex thz-items-center thz-justify-center" href="#">Details <i class="fi-arrow-up-right thz-text-[22px] thz-text-white thz-ml-1 thz-rotate-0 group-hover:thz-rotate-45 thz-transition-all thz-duration-300"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- grid-view -->
+                    <div id="tab-2-body" class="grid-view tab-body">
+                        <div class="thz-grid thz-grid-cols-1 md:thz-grid-cols-2 thz-gap-7">
+                            <!-- single features 1-->
+                            <div class="thz-relative thz-group">
+                                <!-- features-img -->
+                                <a class="hover-effect thz-block" href="single-property-2.html"><img class="thz-w-full thz-rounded-lg" src="../img/property/property-24.webp" alt=""></a>
+                                <!-- button -->
+                                <div class="thz-flex thz-gap-1 thz-absolute thz-top-5 thz-left-6">
+                                    <span class="thz-bg-green thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-white thz-font-normal thz-leading-none">Featured</span>
+                                    <span class="thz-border thz-border-[#FFFFFF]/15 thz-bg-[#FFFFFF]/60 thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-primary thz-font-normal thz-leading-none">Sell</span>
+                                </div>
+                                <!-- features-content -->
+                                <div class="thz-absolute thz-left-6 xl:thz-left-3 2xl:thz-left-6 thz-bottom-6 thz-right-5 xl:thz-right-3 2xl:thz-right-6 thz-z-10">
+                                    <div class="thz-flex thz-justify-between thz-items-end">
+                                        <div>
+                                            <a class="thz-text-lg thz-font-medium thz-text-white" href="single-property-2.html">Green heaven</a>
+                                            <p class="thz-text-sm thz-font-normal thz-text-white">65 Park Avenue, Florida</p>
+                                            <h3 class="thz-text-base thz-text-white thz-font-semibold">$3500</h3>
+                                        </div>
+                                        <div class="thz-hidden lg:thz-block">
+                                            <p class="thz-text-xs thz-text-white thz-font-normal">Apartments</p>
+                                            <ul class="thz-flex thz-gap-4">
+                                                <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bed thz-text-white"></i><span class="thz-text-sm thz-text-white thz-font-normal">4</span></li>
+                                                <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bath thz-text-white"></i><span class="thz-text-sm thz-text-white thz-font-normal">2</span></li>
+                                                <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-edit-scale thz-text-white"></i><span class="thz-text-sm thz-text-white thz-font-normal">950 ft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single features 2-->
+                            <div class="thz-relative thz-group">
+                                <!-- features-img -->
+                                <a class="hover-effect thz-block" href="single-property-2.html"><img class="thz-w-full thz-rounded-lg" src="../img/property/property-23.webp" alt=""></a>
+                                <!-- button -->
+                                <div class="thz-flex thz-gap-1 thz-absolute thz-top-5 thz-left-6">
+                                    <span class="thz-bg-green thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-white thz-font-normal thz-leading-none">Featured</span>
+                                    <span class="thz-border thz-border-[#FFFFFF]/15 thz-bg-[#FFFFFF]/60 thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-primary thz-font-normal thz-leading-none">Sell</span>
+                                </div>
+                                <!-- features-content -->
+                                <div class="thz-absolute thz-left-6 xl:thz-left-3 2xl:thz-left-6 thz-bottom-6 thz-right-5 xl:thz-right-3 2xl:thz-right-6 thz-z-10">
+                                    <div class="thz-flex thz-justify-between thz-items-end">
+                                        <div>
+                                            <a class="thz-text-lg thz-font-medium thz-text-white" href="single-property-2.html">Green heaven</a>
+                                            <p class="thz-text-sm thz-font-normal thz-text-white">65 Park Avenue, Florida</p>
+                                            <h3 class="thz-text-base thz-text-white thz-font-semibold">$3500</h3>
+                                        </div>
+                                        <div class="thz-hidden lg:thz-block">
+                                            <p class="thz-text-xs thz-text-white thz-font-normal">Apartments</p>
+                                            <ul class="thz-flex thz-gap-4">
+                                                <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bed thz-text-white"></i><span class="thz-text-sm thz-text-white thz-font-normal">4</span></li>
+                                                <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bath thz-text-white"></i><span class="thz-text-sm thz-text-white thz-font-normal">2</span></li>
+                                                <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-edit-scale thz-text-white"></i><span class="thz-text-sm thz-text-white thz-font-normal">950 ft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single features 3-->
+                            <div class="thz-relative thz-group">
+                                <!-- features-img -->
+                                <a class="hover-effect thz-block" href="single-property-2.html"><img class="thz-w-full thz-rounded-lg" src="../img/property/property-22.webp" alt=""></a>
+                                <!-- button -->
+                                <div class="thz-flex thz-gap-1 thz-absolute thz-top-5 thz-left-6">
+                                    <span class="thz-bg-green thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-white thz-font-normal thz-leading-none">Featured</span>
+                                    <span class="thz-border thz-border-[#FFFFFF]/15 thz-bg-[#FFFFFF]/60 thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-primary thz-font-normal thz-leading-none">Sell</span>
+                                </div>
+                                <!-- features-content -->
+                                <div class="thz-absolute thz-left-6 xl:thz-left-3 2xl:thz-left-6 thz-bottom-6 thz-right-5 xl:thz-right-3 2xl:thz-right-6 thz-z-10">
+                                    <div class="thz-flex thz-justify-between thz-items-end">
+                                        <div>
+                                            <a class="thz-text-lg thz-font-medium thz-text-white" href="single-property-2.html">Green heaven</a>
+                                            <p class="thz-text-sm thz-font-normal thz-text-white">65 Park Avenue, Florida</p>
+                                            <h3 class="thz-text-base thz-text-white thz-font-semibold">$3500</h3>
+                                        </div>
+                                        <div class="thz-hidden lg:thz-block">
+                                            <p class="thz-text-xs thz-text-white thz-font-normal">Apartments</p>
+                                            <ul class="thz-flex thz-gap-4">
+                                                <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bed thz-text-white"></i><span class="thz-text-sm thz-text-white thz-font-normal">4</span></li>
+                                                <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bath thz-text-white"></i><span class="thz-text-sm thz-text-white thz-font-normal">2</span></li>
+                                                <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-edit-scale thz-text-white"></i><span class="thz-text-sm thz-text-white thz-font-normal">950 ft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single features 4-->
+                            <div class="thz-relative thz-group">
+                                <!-- features-img -->
+                                <a class="hover-effect thz-block" href="single-property-2.html"><img class="thz-w-full thz-rounded-lg" src="../img/property/property-21.webp" alt=""></a>
+                                <!-- button -->
+                                <div class="thz-flex thz-gap-1 thz-absolute thz-top-5 thz-left-6">
+                                    <span class="thz-bg-green thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-white thz-font-normal thz-leading-none">Featured</span>
+                                    <span class="thz-border thz-border-[#FFFFFF]/15 thz-bg-[#FFFFFF]/60 thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-primary thz-font-normal thz-leading-none">Sell</span>
+                                </div>
+                                <!-- features-content -->
+                                <div class="thz-absolute thz-left-6 xl:thz-left-3 2xl:thz-left-6 thz-bottom-6 thz-right-5 xl:thz-right-3 2xl:thz-right-6 thz-z-10">
+                                    <div class="thz-flex thz-justify-between thz-items-end">
+                                        <div>
+                                            <a class="thz-text-lg thz-font-medium thz-text-white" href="single-property-2.html">Green heaven</a>
+                                            <p class="thz-text-sm thz-font-normal thz-text-white">65 Park Avenue, Florida</p>
+                                            <h3 class="thz-text-base thz-text-white thz-font-semibold">$3500</h3>
+                                        </div>
+                                        <div class="thz-hidden lg:thz-block">
+                                            <p class="thz-text-xs thz-text-white thz-font-normal">Apartments</p>
+                                            <ul class="thz-flex thz-gap-4">
+                                                <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bed thz-text-white"></i><span class="thz-text-sm thz-text-white thz-font-normal">4</span></li>
+                                                <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bath thz-text-white"></i><span class="thz-text-sm thz-text-white thz-font-normal">2</span></li>
+                                                <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-edit-scale thz-text-white"></i><span class="thz-text-sm thz-text-white thz-font-normal">950 ft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single features 5-->
+                            <div class="thz-relative thz-group">
+                                <!-- features-img -->
+                                <a class="hover-effect thz-block" href="single-property-2.html"><img class="thz-w-full thz-rounded-lg" src="../img/property/property-10.webp" alt=""></a>
+                                <!-- button -->
+                                <div class="thz-flex thz-gap-1 thz-absolute thz-top-5 thz-left-6">
+                                    <span class="thz-bg-green thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-white thz-font-normal thz-leading-none">Featured</span>
+                                    <span class="thz-border thz-border-[#FFFFFF]/15 thz-bg-[#FFFFFF]/60 thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-primary thz-font-normal thz-leading-none">Sell</span>
+                                </div>
+                                <!-- features-content -->
+                                <div class="thz-absolute thz-left-6 xl:thz-left-3 2xl:thz-left-6 thz-bottom-6 thz-right-5 xl:thz-right-3 2xl:thz-right-6 thz-z-10">
+                                    <div class="thz-flex thz-justify-between thz-items-end">
+                                        <div>
+                                            <a class="thz-text-lg thz-font-medium thz-text-white" href="single-property-2.html">Green heaven</a>
+                                            <p class="thz-text-sm thz-font-normal thz-text-white">65 Park Avenue, Florida</p>
+                                            <h3 class="thz-text-base thz-text-white thz-font-semibold">$3500</h3>
+                                        </div>
+                                        <div class="thz-hidden lg:thz-block">
+                                            <p class="thz-text-xs thz-text-white thz-font-normal">Apartments</p>
+                                            <ul class="thz-flex thz-gap-4">
+                                                <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bed thz-text-white"></i><span class="thz-text-sm thz-text-white thz-font-normal">4</span></li>
+                                                <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bath thz-text-white"></i><span class="thz-text-sm thz-text-white thz-font-normal">2</span></li>
+                                                <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-edit-scale thz-text-white"></i><span class="thz-text-sm thz-text-white thz-font-normal">950 ft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single features 6-->
+                            <div class="thz-relative thz-group">
+                                <!-- features-img -->
+                                <a class="hover-effect thz-block" href="single-property-2.html"><img class="thz-w-full thz-rounded-lg" src="../img/property/property-11.webp" alt=""></a>
+                                <!-- button -->
+                                <div class="thz-flex thz-gap-1 thz-absolute thz-top-5 thz-left-6">
+                                    <span class="thz-bg-green thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-white thz-font-normal thz-leading-none">Featured</span>
+                                    <span class="thz-border thz-border-[#FFFFFF]/15 thz-bg-[#FFFFFF]/60 thz-py-0.5 thz-px-2 thz-rounded thz-text-xs thz-text-primary thz-font-normal thz-leading-none">Sell</span>
+                                </div>
+                                <!-- features-content -->
+                                <div class="thz-absolute thz-left-6 xl:thz-left-3 2xl:thz-left-6 thz-bottom-6 thz-right-5 xl:thz-right-3 2xl:thz-right-6 thz-z-10">
+                                    <div class="thz-flex thz-justify-between thz-items-end">
+                                        <div>
+                                            <a class="thz-text-lg thz-font-medium thz-text-white" href="single-property-2.html">Green heaven</a>
+                                            <p class="thz-text-sm thz-font-normal thz-text-white">65 Park Avenue, Florida</p>
+                                            <h3 class="thz-text-base thz-text-white thz-font-semibold">$3500</h3>
+                                        </div>
+                                        <div class="thz-hidden lg:thz-block">
+                                            <p class="thz-text-xs thz-text-white thz-font-normal">Apartments</p>
+                                            <ul class="thz-flex thz-gap-4">
+                                                <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bed thz-text-white"></i><span class="thz-text-sm thz-text-white thz-font-normal">4</span></li>
+                                                <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-bath thz-text-white"></i><span class="thz-text-sm thz-text-white thz-font-normal">2</span></li>
+                                                <li class="thz-flex thz-items-center thz-gap-2"><i class="fi-edit-scale thz-text-white"></i><span class="thz-text-sm thz-text-white thz-font-normal">950 ft</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- pagination -->
+                    <ul class="thz-flex thz-gap-2 thz-justify-center thz-mt-20">
+                        <li><a class="thz-h-10 thz-w-10 thz-border thz-border-border3 thz-rounded-full thz-flex thz-justify-center thz-items-center thz-text-primary hover:thz-bg-green hover:thz-border-green thz-transition-all thz-duration-300 hover:thz-text-white" href="#"><i class="fi-chevron-left thz-text-xs thz-font-normal"></i></a></li>
+                        <li><a class="thz-h-10 thz-w-10 thz-border thz-border-border3 thz-rounded-full thz-flex thz-justify-center thz-items-center thz-text-primary hover:thz-bg-green hover:thz-border-green thz-transition-all thz-duration-300 hover:thz-text-white" href="#">1</a></li>
+                        <li><a class="thz-h-10 thz-w-10 thz-border thz-border-green thz-text-white thz-rounded-full thz-flex thz-justify-center thz-items-center active:thz-bg-green thz-bg-green" href="#">2</a></li>
+                        <li><a class="thz-h-10 thz-w-10 thz-border thz-border-border3 thz-rounded-full thz-flex thz-justify-center thz-items-center thz-text-primary hover:thz-bg-green hover:thz-border-green thz-transition-all thz-duration-300 hover:thz-text-white" href="#">3</a></li>
+                        <li><a class="thz-h-10 thz-w-10 thz-border thz-border-border3 thz-rounded-full thz-flex thz-justify-center thz-items-center thz-text-primary hover:thz-bg-green hover:thz-border-green thz-transition-all thz-duration-300 hover:thz-text-white" href="#"><i class="fi-chevron-right thz-text-xs thz-font-normal"></i></a></li>
+                    </ul>
+                </div>
+                <!-- side-bar -->
+                <div class="md:thz-col-span-4 xl:thz-col-span-1">
+                    <div class="thz-grid md:thz-grid-cols-2 lg:thz-grid-cols-3 xl:thz-grid-cols-1 thz-gap-7">
+                        <!-- search-form -->
+                        <div class="thz-border thz-border-border3 thz-rounded-lg thz-p-8">
+                            <h2 class="thz-text-lg thz-text-primary thz-font-bold thz-mb-2">Search</h2>
+                            <form action="#" class="thz-relative">
+                                <input class="thz-w-full thz-bg-white thz-border-b thz-border-border5 focus:thz-border-green thz-py-3 thz-outline-none thz-text-sm thz-font-normal"  type="text" placeholder="Search...">
+                                <button class="thz-absolute thz-right-0 thz-top-4"><i class="fi-search thz-text-primary thz-font-bold thz-inline-block"></i></button>
+                            </form>
+                        </div>
+                        <!-- Categories -->
+                        <div class="thz-border thz-border-border3 thz-rounded-lg thz-p-8">
+                            <!-- title -->
+                            <h2 class="thz-text-lg thz-text-primary thz-font-bold thz-mb-4">Categories</h2>
+                            <ul class="thz-space-y-3">
+                                <li class="form-group-4 thz-relative thz-group">
+                                    <label for="cat-1" class="thz-text-secondary thz-font-normal thz-text-sm thz-cursor-pointer thz-block group-hover:thz-text-green thz-transition-all">Duplex House</label>
+                                    <input type="checkbox" id="cat-1" class="chek thz-cursor-pointer thz-absolute thz-right-0 thz-top-[50%] thz-translate-y-[-50%]">
+                                </li>
+                                <li class="form-group-4 thz-relative thz-group">
+                                    <label for="cat-2" class="thz-text-secondary thz-font-normal thz-text-sm thz-cursor-pointer thz-block group-hover:thz-text-green thz-transition-all">Land</label>
+                                    <input type="checkbox" id="cat-2" class="chek thz-cursor-pointer thz-absolute thz-right-0 thz-top-[50%] thz-translate-y-[-50%]">
+                                </li>
+                                <li class="form-group-4 thz-relative thz-group">
+                                    <label for="cat-3" class="thz-text-secondary thz-font-normal thz-text-sm thz-cursor-pointer thz-block group-hover:thz-text-green thz-transition-all">Apartments</label>
+                                    <input type="checkbox" id="cat-3" class="chek thz-cursor-pointer thz-absolute thz-right-0 thz-top-[50%] thz-translate-y-[-50%]">
+                                </li>
+                                <li class="form-group-4 thz-relative thz-group">
+                                    <label for="cat-4" class="thz-text-secondary thz-font-normal thz-text-sm thz-cursor-pointer thz-block group-hover:thz-text-green thz-transition-all">Commercials</label>
+                                    <input type="checkbox" id="cat-4" class="chek thz-cursor-pointer thz-absolute thz-right-0 thz-top-[50%] thz-translate-y-[-50%]">
+                                </li>
+                                <li class="form-group-4 thz-relative thz-group">
+                                    <label for="cat-5" class="thz-text-secondary thz-font-normal thz-text-sm thz-cursor-pointer thz-block group-hover:thz-text-green thz-transition-all">Home Rental</label>
+                                    <input type="checkbox" id="cat-5" class="chek thz-cursor-pointer thz-absolute thz-right-0 thz-top-[50%] thz-translate-y-[-50%]">
+                                </li>
+                                <li class="form-group-4 thz-relative thz-group">
+                                    <label for="cat-6" class="thz-text-secondary thz-font-normal thz-text-sm thz-cursor-pointer thz-block group-hover:thz-text-green thz-transition-all">Sell</label>
+                                    <input type="checkbox" id="cat-6" class="chek thz-cursor-pointer thz-absolute thz-right-0 thz-top-[50%] thz-translate-y-[-50%]">
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- price filtering -->
+                        <div class="thz-border thz-border-border3 thz-rounded-lg thz-p-8">
+                            <!-- title -->
+                            <h2 class="thz-text-lg thz-text-primary thz-font-bold thz-mb-4">Price Filtering</h2>
+                            <p class="thz-leading-none">
+                                <label class="thz-text-sm thz-text-secondary thz-font-medium">Price range</label>
+                                <input type="text" readonly class="amount thz-text-sm thz-text-secondary thz-font-normal thz-outline-none thz-bg-transparent thz-w-[50%]">
+                            </p> 
+                            <div class="slider-range range-color-2 thz-mt-3"></div>
+                            <!-- button -->
+                            <button class="thz-font-medium thz-text-base thz-text-white thz-bg-green thz-py-2.5 thz-px-6 thz-rounded thz-mt-5">Filter</button>
+                        </div>
+                        <!-- properties-image -->
+                        <div class="thz-rounded-lg thz-group thz-overflow-hidden">
+                            <a href="#" class="hover-effect-flat thz-relative thz-block">
+                                <img class="thz-w-full thz-rounded-lg thz-scale-100 group-hover:thz-scale-110 thz-transition-all thz-duration-700" src="../img/properties/properties-1.webp" alt="">
+                                <!-- content -->
+                                <div class="thz-absolute thz-bottom-6 thz-left-7 thz-right-7 thz-z-[99]">
+                                    <span class="thz-text-base thz-text-white thz-font-normal thz-leading-none">5</span>
+                                    <div class="thz-flex thz-justify-between thz-items-center">
+                                        <h4 class="thz-text-[18px] thz-text-white thz-font-semibold thz-leading-none ">New York</h4>
+                                        <!-- icon -->
+                                        <i class="fi-arrow-up-right thz-text-[22px] thz-text-white thz-inline-block thz-rotate-0 group-hover:thz-rotate-45 thz-transition-all thz-duration-300"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Find By Location -->
+                        <div class="thz-border thz-border-border3 thz-rounded-lg thz-p-8">
+                            <!-- title -->
+                            <h2 class="thz-text-lg thz-text-primary thz-font-bold thz-mb-4">Find By Location</h2>
+                            <ul class="thz-space-y-3">
+                                <li class="form-group-4 thz-relative thz-group">
+                                    <label for="cat-7" class="thz-text-secondary thz-font-normal thz-text-sm thz-cursor-pointer thz-ml-7 thz-block group-hover:thz-text-green thz-transition-all">New York</label>
+                                    <input type="checkbox" id="cat-7" class="chek thz-cursor-pointer thz-absolute thz-left-0 thz-top-[50%] thz-translate-y-[-50%]">
+                                </li>
+                                <li class="form-group-4 thz-relative thz-group">
+                                    <label for="cat-8" class="thz-text-secondary thz-font-normal thz-text-sm thz-cursor-pointer thz-ml-7 thz-block group-hover:thz-text-green thz-transition-all">Florida</label>
+                                    <input type="checkbox" id="cat-8" class="chek thz-cursor-pointer thz-absolute thz-left-0 thz-top-[50%] thz-translate-y-[-50%]">
+                                </li>
+                                <li class="form-group-4 thz-relative thz-group">
+                                    <label for="cat-9" class="thz-text-secondary thz-font-normal thz-text-sm thz-cursor-pointer thz-ml-7 thz-block group-hover:thz-text-green thz-transition-all">Texas</label>
+                                    <input type="checkbox" id="cat-9" class="chek thz-cursor-pointer thz-absolute thz-left-0 thz-top-[50%] thz-translate-y-[-50%]">
+                                </li>
+                                <li class="form-group-4 thz-relative thz-group">
+                                    <label for="cat-10" class="thz-text-secondary thz-font-normal thz-text-sm thz-cursor-pointer thz-ml-7 thz-block group-hover:thz-text-green thz-transition-all">Miami</label>
+                                    <input type="checkbox" id="cat-10" class="chek thz-cursor-pointer thz-absolute thz-left-0 thz-top-[50%] thz-translate-y-[-50%]">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Listing page section-end -->
+
+        <!-- footer-start -->
+        <footer class="thz-pt-10 lg:thz-pt-16 2xl:thz-pt-24 thz-bg-primary2">
+            <!-- container -->
+            <div class="thz-container thz-pb-10 lg:thz-pb-16 ">
+                <div class="thz-grid thz-grid-cols-1 sm:thz-grid-cols-2 lg:thz-grid-cols-4 thz-space-y-10 sm:thz-space-y-0 sm:thz-gap-10 xl:thz-gap-0">
+                    <!-- footer-logo -->
+                    <div class="thz-space-y-4 xl:thz-border-r thz-border-border7 md:thz-pr-10 lg:thz-pr-0 xl:thz-pr-10">
+                        <img src="../img/logos/white-logo.svg" alt="">
+                        <p class="thz-text-sm thz-font-normal thz-text-white">Finding my dream home was seamless home. Their dedicated team not only unders my needs but exceeded expectation making homeownership a reality.</p>
+                        <a href="#" class="demo-5-color thz-inline-flex thz-text-sm thz-text-white thz-font-medium">Read more<i class="fi-arrow-up-right thz-text-[22px] thz-text-white thz-ml-1"></i></a>
+                    </div>
+                    <!-- footer-contact -->
+                    <div class="lg:thz-pl-5 xl:thz-px-10 2xl:thz-pr-12 xl:thz-border-r thz-border-border7">
+                        <!-- title -->
+                        <h2 class="thz-text-lg thz-font-medium thz-text-white thz-mb-5">Contact Us</h2>
+                        <!-- location -->
+                        <div class="thz-flex thz-gap-4 thz-border-b thz-border-border7 thz-pb-5 thz-mb-5">
+                            <i class="fi-map-pin thz-text-[22px] thz-text-white thz-mt-1 hover:thz-text-green thz-transition-all thz-duration-300"></i>
+                            <div>
+                                <p class="thz-text-sm thz-font-normal thz-text-white">65 Park avenue road</p>
+                                <p class="thz-text-sm thz-font-normal thz-text-white">North Florida, USA</p>
+                            </div>
+                        </div>
+                        <!-- contact -->
+                        <div class="thz-flex thz-gap-4 thz-border-b thz-border-border7 thz-pb-4 thz-mb-5">
+                            <i class="fi-phone-incoming thz-text-[22px] thz-text-white thz-mt-1 hover:thz-text-green thz-transition-all thz-duration-300"></i>
+                            <div>
+                                <h2 class="thz-text-sm thz-font-semibold thz-text-white">Call now</h2>
+                                <p class="thz-text-sm thz-font-normal thz-text-white">(301) 987-0256</p>
+                            </div>
+                        </div>
+                        <!-- email -->
+                        <div class="thz-flex thz-gap-4">
+                            <i class="fi-email thz-text-[22px] thz-text-white hover:thz-text-green thz-transition-all thz-duration-300"></i>
+                            <div>
+                                <h2 class="thz-text-sm thz-font-semibold thz-text-white thz-leading-none">Email</h2>
+                                <p class="thz-text-sm thz-font-normal thz-text-white">home@themebeer.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer-link -->
+                    <div class="lg:thz-pl-7 xl:thz-pl-10 2xl:thz-pl-12 xl:thz-border-r thz-border-border7">
+                        <!-- title -->
+                        <h2 class="thz-text-lg thz-font-medium thz-text-white thz-mb-4">Quick Links</h2>
+                        <!-- link -->
+                        <ul class="thz-space-y-2">
+                            <li><a class="thz-text-sm thz-font-normal thz-text-white" href="#">Terms of service</a></li>
+                            <li><a class="thz-text-sm thz-font-normal thz-text-white" href="#">Privacy Policy</a></li>
+                            <li><a class="thz-text-sm thz-font-normal thz-text-white" href="#">Pricing Plan</a></li>
+                            <li><a class="thz-text-sm thz-font-normal thz-text-white" href="#">FAQ</a></li>
+                            <li><a class="thz-text-sm thz-font-normal thz-text-white" href="#">Contact Us</a></li>
+                            <li><a class="thz-text-sm thz-font-normal thz-text-white" href="#">Career</a></li>
+                        </ul>
+                    </div>
+                    <!-- footer-social -->
+                    <div class="thz-space-y-4 xl:thz-pl-10 2xl:thz-pl-12">
+                        <!-- title -->
+                        <h2 class="thz-text-lg thz-font-medium thz-text-white thz-mb-4">Get Connected</h2>
+                        <!-- form -->
+                        <form action="#" class="demo-5-color thz-relative">
+                            <input class="thz-w-full thz-py-2 thz-outline-none thz-bg-transparent thz-border-b thz-border-border7 focus:thz-border-green thz-transition-all thz-duration-300 placeholder:thz-text-white thz-font-semibold thz-text-sm thz-text-white" type="email" placeholder="Email address">
+                            <i class="fi-arrow-up-right thz-absolute thz-top-2 thz-right-0 thz-text-[22px] thz-text-white"></i>
+                        </form>
+                        <p  class="thz-text-sm thz-font-normal thz-text-white">Finding my dream home was seamless me my needs but exceeded</p>
+                        <!-- socal-icon -->
+                        <div class="thz-space-y-4">
+                            <h2 class="thz-text-lg thz-text-white thz-font-medium">Social media</h2>
+                            <!-- socal-link -->
+                            <div class="thz-flex thz-gap-5 thz-items-center">
+                                <a class="thz-inline-block thz-text-white hover:thz-text-green thz-transition-all thz-duration-300" href="#"><i class="fi-facebook"></i></a>
+                                <a class="thz-inline-block thz-text-white hover:thz-text-green thz-transition-all thz-duration-300" href="#"><i class="fi-linkedin"></i></a>
+                                <a class="thz-inline-block thz-text-white hover:thz-text-green thz-transition-all thz-duration-300" href="#"><i class="fi-x"></i></a>
+                                <a class="thz-inline-block thz-text-white hover:thz-text-green thz-transition-all thz-duration-300" href="#"><i class="fi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <!-- copyright -->
+            <div class="thz-border-t thz-border-border7">
+                <div class="thz-container thz-py-8 ">
+                    <p class="thz-text-sm thz-text-white thz-font-normal thz-text-center md:thz-text-left">© 2025 TheHouze. All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-end -->
+
+        <!-- modal-button -->
+        <button class="thz-fixed thz-top-[50%] thz-translate-y-[-50%] thz-right-0 thz-inline-flex thz-px-2.5 thz-py-2 thz-text-xs thz-text-white thz-font-medium thz-uppercase thz-bg-green thz-z-[99999]" data-toggle="modal" data-target="popup">Demo</button>
+        <!-- modal-content -->
+        <div class="thz-fixed thz-inset-0 thz-w-full thz-h-screen thz-hidden modal thz-overflow-auto thz-z-[99999]" id="popup">
+            <div class="modal-backdrop thz-fixed thz-w-full thz-inset-0 thz-bg-black thz-opacity-20 thz-z-30" data-close>
+            </div>
+            <div class="thz-min-h-screen thz-flex thz-items-center thz-justify-center thz-relative thz-pointer-events-none thz-py-8 thz-px-4 thz-z-50">
+                <div class="thz-fixed thz-left-0 thz-right-0 thz-top-5 sm:thz-top-8 thz-bottom-5 sm:thz-bottom-8 thz-w-[calc(100vw-30px)] sm:thz-w-[calc(100vw-50px)] lg:thz-w-[calc(100vw-100px)] thz-overflow-x-hidden thz-overflow-y-scroll thz-overscroll-contain thz-bg-white thz-mx-auto thz-pointer-events-auto thz-rounded-md">
+                    <div class="thz-p-7 thz-py-4 thz-flex thz-justify-between thz-items-center thz-fixed thz-left-0 thz-right-0 thz-mx-auto thz-bg-white thz-w-[calc(100vw-30px)] sm:thz-w-[calc(100vw-50px)] lg:thz-w-[calc(100vw-100px)] thz-rounded-tl-md thz-rounded-tr-md">
+                        <h5 class="thz-mb-0 thz-text-xl thz-text-primary thz-font-bold thz-leading-none">10 Home Page</h5>
+                        <button class="thz-text-xl thz-text-primary thz-leading-none" data-close> <i class="fi-close"></i></button>
+                    </div>
+                    <div class="thz-p-7 thz-pt-16">
+                        <div class="thz-grid sm:thz-grid-cols-2 lg:thz-grid-cols-3 xl:thz-grid-cols-4 thz-gap-y-10 thz-gap-4">
+                            <!-- demo-1 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-1/./index.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-1.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-green thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-1/./index.html">Home-1</a>
+                            </div>
+                            <!-- demo-2 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-1/./index-2.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-2.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-green thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-1/./index-2.html">Home-2</a>
+                            </div>
+                            <!-- demo-3 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-2/./index.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-3.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-green thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-2/./index.html">Home-3</a>
+                            </div>
+                            <!-- demo-4 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-2/./index-2.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-4.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-green thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-2/./index-2.html">Home-4</a>
+                            </div>
+                            <!-- demo-5 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-3/./index.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-5.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-green thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-3/./index.html">Home-5</a>
+                            </div>
+                            <!-- demo-6 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-3/./index-2.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-6.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-green thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-3/./index-2.html">Home-6</a>
+                            </div>
+                            <!-- demo-7 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-4/./index.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-7.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-green thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-4/./index.html">Home-7</a>
+                            </div>
+                            <!-- demo-8 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-4/./index-2.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-8.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-green thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-4/./index-2.html">Home-8</a>
+                            </div>
+                            <!-- demo-9 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-5/./index.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-9.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-green thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-5/./index.html">Home-9</a>
+                            </div>
+                            <!-- demo-10 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-5/./index-2.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-10.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-green thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-5/./index-2.html">Home-10</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- js-here -->
+        <!-- ====================== -->
+        <!-- jquery-1.12.4.min.js -->
+        <script src="../js/jquery-1.12.4.min.js"></script>
+        <!-- jquery-ui.min.js -->
+        <script src="../js/jquery-ui.min.js"></script>
+        <!-- select2.min.js -->
+        <script src="../js/select2.min.js"></script>
+        <!-- main.js -->
+        <script src="../js/main.js"></script>
+    </body>
+</html>

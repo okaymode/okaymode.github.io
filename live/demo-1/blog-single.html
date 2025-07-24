@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- title -->
+        <title>The Houze</title>
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="../img/favicon/favicon-1.png">
+        <!-- css here -->
+        <!-- ========================== -->
+        <!-- finest-icon.css -->
+        <link rel="stylesheet" href="../css/finest-icon.css">
+        <!-- animate.css -->
+        <link rel="stylesheet" href="../css/animate.css">
+        <!-- main.css -->
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body class="thz-font-roboto thz-text-secondary">
+        <!--Preloader Start-->
+        <div class="loader-wrapper">
+            <div class="lds-spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!--Preloader End-->
+
+        <!--Scroll UP Section Start-->
+        <div class="scroll-up">
+            <svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
+        <!--Scroll UP Section End-->
+
+        <!-- thz-offcanvus-area-end -->
+        <!-- add calss name"left-right" to open offcanvas menu left to right -->
+        <div class="thz-offcanvas-area left-right">
+            <div class="thz-offcanvas-wrapper">
+                <div class="thz-offcanvas-top thz-flex thz-items-center thz-justify-between">
+                    <div class="thz-offcanvas-logo">
+                        <a href="index.html"><img src="../img/logos/brand-logo.svg" alt=""></a>
+                    </div>
+                    <div class="thz-offcanvas-close">
+                        <button class="thz-offcanvas-close-btn thz-text-xl">
+                            <i class="fi-close"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="thz-offcanvas-main">
+                    <div class="thz-offcanvas-content">
+                        <h3 class="thz-offcanvas-title">Hello There!</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+                    </div>
+                    <div class="thz-offcanvas-menu lg:thz-hidden">
+                        <nav></nav>
+                    </div>
+                    <div class="thz-offcanvas-contact">
+                        <h3 class="thz-offcanvas-title sm">Information</h3>
+                        <ul>
+                            <li><a href="#">+ 4 20 7700 1007</a></li>
+                            <li><a href="#">hello@houzey.com</a></li>
+                            <li><a href="#">65 Park Avenue, Florida, USA</a></li>
+                        </ul>
+                    </div>
+                    <div class="thz-offcanvas-button">
+                        <!-- login -->
+                        <div class="thz-flex thz-flex-col xs:thz-flex-row thz-gap-5 thz-items-center thz-justify-between">
+                            <!-- thz-account-btn -->
+                            <a class="thz-flex thz-items-center thz-justify-center thz-gap-2 thz-text-base thz-text-primary thz-font-medium thz-relative hover:thz-text-brand thz-transition-all" href="#"><span class="thz-inline-block"><i class="fi-user thz-text-[22px]"></i></span>My Account</a>
+                            <!-- add-property-btn -->
+                            <a class="thz-font-medium thz-text-base thz-text-white thz-bg-primary thz-w-full xs:thz-w-[148px] thz-h-[42px] thz-flex thz-items-center thz-justify-center thz-rounded" href="#">+ Add Property</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body-overlay"></div>
+        <!-- thz-offcanvus-area-end -->
+
+        <!-- header-start -->
+        <header class="main-header">
+            <!-- nav-bar -->
+            <div class="thz-container-fluid thz-mx-auto xs:thz-w-[400px] sm:thz-w-[540px] md:thz-w-[720px] lg:thz-w-[960px] xl:thz-w-[1200px] 2xl:thz-w-[1400px] thz-px-[15px] thz-flex thz-justify-between thz-items-center thz-relative thz-py-5">
+                <!-- logo -->
+                <a href="index.html"><img src="../img/logos/brand-logo.svg" alt=""></a>
+                <!-- menu -->
+                <div class="thz-flex thz-items-center thz-gap-6 xl:thz-gap-24">
+                    <div class="thz-hidden lg:thz-block">
+                        <!-- main-menu -->
+                        <nav class="thz-mobile-menu-active main-menu">
+                            <ul class="lg:thz-flex lg:thz-items-center lg:thz-gap-7 xl:thz-gap-10">
+                                <li class="thz-relative thz-group">
+                                    <a class="thz-font-medium thz-text-base thz-text-primary hover:thz-text-brand thz-transition-all" href="#">Home</a>
+                                    <!-- sub-menu -->
+                                    <ul class="thz-submenu lg:thz-absolute lg:thz-top-[250%] lg:thz-left-0 lg:thz-w-[230px] lg:thz-bg-white lg:thz-rounded-sm lg:thz-py-6 lg:thz-px-7 lg:thz-space-y-3 lg:thz-z-20 lg:thz-opacity-0 lg:thz-invisible group-hover:lg:thz-opacity-100 group-hover:lg:thz-visible group-hover:lg:thz-top-[220%] lg:thz-transition-all lg:thz-duration-300">
+                                        <li><a href="index.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Home One</a></li>
+                                        <li><a href="index-2.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Home Two</a></li>
+                                    </ul>
+                                </li>
+                                <li class="thz-relative thz-group">
+                                    <a class="thz-font-medium thz-text-base thz-text-primary hover:thz-text-brand thz-transition-all" href="#">Real Estate</a>
+                                    <!-- sub-menu -->
+                                    <ul class="thz-submenu lg:thz-absolute lg:thz-top-[250%] lg:thz-left-0 lg:thz-w-[230px] lg:thz-bg-white lg:thz-rounded-sm lg:thz-py-6 lg:thz-px-7 lg:thz-space-y-3 lg:thz-z-20 lg:thz-opacity-0 lg:thz-invisible group-hover:lg:thz-opacity-100 group-hover:lg:thz-visible group-hover:lg:thz-top-[220%] lg:thz-transition-all lg:thz-duration-300">
+                                        <li><a href="properties.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Properties Grid Layout</a></li>
+                                        <li><a href="properties-list.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Properties List Layout</a></li>
+                                        <li><a href="properties.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Properties Left Sidebar</a></li>
+                                        <li><a href="properties-right-sidebar.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Properties Right Sidebar</a></li>
+                                        <li><a href="search.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Properties Half map</a></li>
+                                        <li><a href="agent-1.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Agent Layout 1</a></li>
+                                        <li><a href="agent-2.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Agent Layout 2</a></li>
+                                        <li><a href="agent-single.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Agent Single</a></li>
+                                    </ul>
+                                </li>
+                                <li class="thz-relative thz-group">
+                                    <a class="thz-font-medium thz-text-base thz-text-primary hover:thz-text-brand thz-transition-all" href="#">Single Property</a>
+                                    <!-- sub-menu -->
+                                    <ul class="thz-submenu lg:thz-absolute lg:thz-top-[250%] lg:thz-left-0 lg:thz-w-[230px] lg:thz-bg-white lg:thz-rounded-sm lg:thz-py-6 lg:thz-px-7 lg:thz-space-y-3 lg:thz-z-20 lg:thz-opacity-0 lg:thz-invisible group-hover:lg:thz-opacity-100 group-hover:lg:thz-visible group-hover:lg:thz-top-[220%] lg:thz-transition-all lg:thz-duration-300">
+                                        <li class="thz-relative">
+                                            <a href="single-property.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Layout One</a>
+                                            <!-- sub-menu -->
+                                            <ul class="thz-submenu sub-menu-3 lg:thz-absolute lg:!thz-top-0 lg:thz-left-[100%] lg:thz-w-[230px] lg:thz-bg-white lg:thz-rounded-sm lg:thz-py-6 lg:thz-px-7 lg:thz-space-y-3 lg:thz-z-20 lg:thz-transition-all lg:thz-duration-300">
+                                                <li><a href="#" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Grid One</a></li>
+                                                <li><a href="#" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Grid Two</a></li>
+                                                <li><a href="#" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Grid Three</a></li>
+                                                <li><a href="#" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Grid Four</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="single-property-2.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Layout Two</a></li>
+                                        <li><a href="single-property-3.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Layout Three</a></li>
+                                        <li><a href="single-property-4.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Layout Four</a></li>
+                                    </ul>
+                                </li>
+                                <li class="thz-relative thz-group">
+                                    <a class="thz-font-medium thz-text-base thz-text-primary hover:thz-text-brand thz-transition-all" href="#">Blog</a>
+                                    <!-- sub-menu -->
+                                    <ul class="thz-submenu lg:thz-absolute lg:thz-top-[250%] lg:thz-left-0 lg:thz-w-[230px] lg:thz-bg-white lg:thz-rounded-sm lg:thz-py-6 lg:thz-px-7 lg:thz-space-y-3 lg:thz-z-20 lg:thz-opacity-0 lg:thz-invisible group-hover:lg:thz-opacity-100 group-hover:lg:thz-visible group-hover:lg:thz-top-[220%] lg:thz-transition-all lg:thz-duration-300">
+                                        <li><a href="blog.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Blog</a></li>
+                                        <li><a href="blog-single.html" class="thz-text-primary thz-text-sm thz-font-normal hover:thz-text-brand thz-transition-all">Blog Single</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="thz-font-medium thz-text-base thz-text-primary hover:thz-text-brand thz-transition-all" href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="thz-hidden lg:thz-block">
+                        <!-- login -->
+                        <ul class="thz-flex thz-items-center thz-gap-6 xl:thz-gap-10">
+                            <li class="thz-relative thz-group">
+                                <a class="thz-flex thz-items-center thz-gap-2 thz-text-base thz-text-primary thz-font-medium thz-relative hover:thz-text-brand thz-transition-all" href="#"><span class="thz-inline-block"><i class="fi-user thz-text-[22px]"></i></span>My Account</a>
+                                <!-- drop-down -->
+                                <ul class="thz-absolute thz-top-[250%] thz-left-0 thz-w-[230px] thz-bg-white lg:thz-rounded-sm thz-py-5 thz-pl-4 thz-z-10 custom-shadow-3 thz-opacity-0 thz-invisible group-hover:thz-opacity-100 group-hover:thz-top-[200%] group-hover:thz-visible thz-transition-all thz-duration-300">
+                                    <li><a href="#" class="thz-text-primary thz-text-[14px] thz-font-normal thz-flex thz-items-center hover:thz-text-brand thz-transition-all"><span class="thz-inline-block thz-mr-2"><i class="fi-heart"></i></span>My Favourites</a></li>
+                                </ul>
+                            </li>
+                            <li> <a class="thz-font-medium thz-text-base thz-text-white thz-bg-primary thz-py-2.5 thz-px-6 thz-rounded thz-inline-block" href="#">+ Add Property</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- thz-offcanvas-open-btn -->
+                <button class="thz-offcanvas-open-btn thz-text-xl thz-text-primary lg:thz-hidden">
+                    <i class="fi-menu"></i>
+                </button>
+            </div>
+            <!-- nav-bar-end -->
+        </header>
+        <!-- header-end -->
+
+        <!-- banner-section-start -->
+        <section class="thz-bg-cover thz-bg-center thz-py-20 sm:thz-py-32 md:thz-pt-60 md:thz-pb-32 lg:thz-pt-72 2xl:thz-pt-[500px] thz-relative" style="background-image: url(../img/bg/blog-bg-2.webp);">
+                <!-- bg-overly -->
+                <div class="thz-absolute thz-left-0 thz-top-0 thz-w-full thz-h-full thz-bg-[#000000]/20"></div>
+                <!-- container -->
+                <div class="thz-container thz-text-center md:thz-text-left">
+                    <!-- title -->
+                    <h3 class="thz-text-3xl thz-text-white md:thz-text-4xl lg:thz-text-5xl thz-font-extrabold thz-relative">Real estate secret to make good earning</h3>
+                    <!-- bredcum -->
+                    <div class="thz-flex thz-items-center thz-justify-center md:thz-justify-start thz-gap-3 thz-pt-4 thz-relative">
+                        <span class="thz-text-sm thz-font-normal thz-text-white">20 May, 2024</span>
+                        <span class="thz-h-1 thz-w-1 thz-bg-white thz-rounded-full"></span>
+                        <span class="thz-text-sm thz-font-normal thz-text-white">Business</span>
+                        <span class="thz-h-1 thz-w-1 thz-bg-white thz-rounded-full"></span>
+                        <span class="thz-text-sm thz-font-normal thz-text-white">Adrian</span>
+                    </div>  
+                </div>
+        </section>
+        <!-- banner-section-end -->
+
+        <!-- blog-section-start -->
+        <section class="thz-container thz-pt-10 lg:thz-pt-16 thz-pb-10 lg:thz-pb-16 2xl:thz-pb-24">
+            <!-- blog-discription -->
+            <div class="thz-grid thz-grid-cols-1 md:thz-grid-cols-2 lg:thz-grid-cols-3 xl:thz-grid-cols-4 thz-gap-8 2xl:thz-gap-12">
+                <div class="thz-col-span-1 md:thz-col-span-4 xl:thz-col-span-3">
+                    <div>
+                        <h2 class="thz-text-xl thz-text-primary thz-font-extrabold thz-px-3 thz-mr-3 thz-mt-1.5 thz-rounded-lg thz-border thz-border-border3 thz-float-left">R</h2>     
+                        <p class="thz-text-sm thz-font-normal thz-leading-7">ing La casita castle an extraordinary and sprawling retreat seamlessly blending modern elegance with the tranquility of nature. This expansive roboasts open-concept living spaces, a state-of-the-art gourmet kitchen, and a palatial master suite offering panoramic views of the picturesque surroundings. Outside, a vast landscaped oasis awaits, featuring an indulgent pool, a spacious lounge area shaded by pergolas, and meticulously manicured gardens. Embrace unparalleled serenity and luxury in this threefold larger haven of comfort and style.The perfect blend of grandeur and
+                        Introducing La casita castle an extraordinary and sprawling retreat seamlessly blending modern elegance with the tranquility of nature. This expansive property boasts open-concept living spaces, a state-of-the-art gourmet kitchen, and a palatial master suite offering panoramic views of the picturesque surroundings. Outside, a vast landscaped oasis awaits, featuring an indulgent pool, a spacious lounge area shaded by pergolas, and meticulously manicured gardens. Embrace unparalleled serenity and luxury in this threefold larger haven of comfort and style.The perfect blend of grandeur and natural beauty awaits you at my home.</p>
+                        <p class="thz-text-sm thz-font-normal thz-leading-7 thz-mt-6">La casite is not just a home; it's a lifestyle. Whether you're enjoying the tranquility of the surroundings, entertaining guests in the elegant living spaces, or lounging by the pool, this property offers a harmonious blend of modern luxury and natural beauty. Embrace the serenity and make this residence your own retreat in the midst of nature's embrace.</p>
+                    </div>
+                    <!-- blog-single -->
+                    <div class="thz-grid thz-grid-cols-1 sm:thz-grid-cols-2 thz-gap-7 thz-mt-10">
+                        <div>
+                            <img class="thz-w-full thz-rounded-lg" src="../img/blog/blog-single-1.webp" alt="">
+                        </div>
+                        <div>
+                            <img class="thz-w-full thz-rounded-lg" src="../img/blog/blog-single-2.webp" alt="">
+                        </div>
+                    </div>
+                    <!-- blog-discription -->
+                    <div class="thz-mt-10">
+                        <h3 class="thz-text-lg thz-text-primary thz-font-bold thz-mb-3">Purpose of having a website</h3>
+                        <p class="thz-text-sm thz-font-normal thz-leading-7 thz-mb-8">surroundings. Outside, a vast landscaped oasis awaits, featuring an indulgent pool, a spacious lounge area shaded by pergolas, and meticulously manicured gardens. Embrace unparalleled serenity and luxury in this threefold larger haven of comfort and style.The perfect blend of grandeur and Introducing La casita castle an extraordinary and sprawling retreat seamlessly blending modern elegance with the tranquility of nature. This expansive property boasts open-concept living spaces, a state-of-the-art gourmet kitchen, and a palatial master suite offering panoramic views of the picturesque surroundings. Outside, a vast landscaped oasis awaits, featuring an indulgent pool, a spacious lounge area shaded by pergolas, and meticulously manicured gardens. Embrace unparalleled serenity and luxury in this threefold larger haven of comfort and style.The perfect blend of grandeur and natural beauty awaits you at my home.</p>
+                        <p class="thz-text-sm thz-font-normal thz-leading-7">La casite is not just a home; it's a lifestyle. Whether you're enjoying the tranquility of the surroundings, entertaining guests in the elegant living spaces, or lounging by the pool, this property offers a harmonious blend of modern luxury and natural beauty. Embrace the serenity and make this residence your own retreat in the midst of nature's embrace.</p>
+                    </div>
+                    <!-- quote -->
+                    <div class="md:thz-border md:thz-border-border3 thz-rounded-lg thz-mt-10 md:thz-py-11 md:thz-px-16">
+                        <div class="thz-flex thz-flex-col thz-gap-10 md:thz-flex-row md:thz-gap-14 md:thz-items-start">
+                            <div class="thz-flex thz-gap-1 thz-mt-2">
+                                <img src="../img/icon/quote.svg" alt="">
+                                <img src="../img/icon/quote.svg" alt="">
+                            </div>
+                            <div>
+                                <p class="thz-text-base thz-text-primary thz-font-normal thz-leading-7">My home theme designed exclusively for real estate professionals property enthusiasts. With a sleek, unique creative modern design, powerful feature</p>
+                                <h3 class="thz-text-lg thz-text-primary thz-font-bold thz-mt-2">Dennis Anderson</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- blog-discription -->
+                    <div class="thz-mt-10">
+                        <h3 class="thz-text-lg thz-text-primary thz-font-bold thz-mb-3">Purpose of having a website</h3>
+                        <p class="thz-text-sm thz-font-normal thz-leading-7 thz-mb-8">surroundings. Outside, a vast landscaped oasis awaits, featuring an indulgent pool, a spacious lounge area shaded by pergolas, and meticulously manicured gardens. Embrace unparalleled serenity and luxury in this threefold larger haven of comfort and style.The perfect blend of grandeur and Introducing La casita castle an extraordinary and sprawling retreat seamlessly blending modern elegance with the tranquility of nature. This expansive property boasts open-concept living spaces, a state-of-the-art gourmet kitchen, and a palatial master suite offering panoramic views of the picturesque surroundings. Outside, a vast landscaped oasis awaits, featuring an indulgent pool, a spacious lounge area shaded by pergolas, and meticulously manicured gardens. Embrace unparalleled serenity and luxury in this threefold larger haven of comfort and style.The perfect blend of grandeur and natural beauty awaits you at my home.</p>
+                        <p class="thz-text-sm thz-font-normal thz-leading-7">La casite is not just a home; it's a lifestyle. Whether you're enjoying the tranquility of the surroundings, entertaining guests in the elegant living spaces, or lounging by the pool, this property offers a harmonious blend of modern luxury and natural beauty. Embrace the serenity and make this residence your own retreat in the midst of nature's embrace.</p>
+                    </div>
+                    <!-- tag -->
+                    <div class="thz-flex thz-flex-col thz-gap-10 sm:thz-flex-row thz-justify-between thz-items-center thz-mt-12">
+                        <!-- tag -->
+                        <div class="thz-flex thz-gap-2">
+                            <a class="thz-text-sm thz-text-primary thz-font-normal thz-border thz-border-border4 hover:thz-border-brand hover:thz-text-brand thz-transition-all thz-duration-300 thz-inline-block thz-py-2 thz-px-3.5 thz-rounded-full" href="#">Business</a>
+                            <a class="thz-text-sm thz-text-primary thz-font-normal thz-border thz-border-border4 hover:thz-border-brand hover:thz-text-brand thz-transition-all thz-duration-300 thz-inline-block thz-py-2 thz-px-3.5 thz-rounded-full" href="#">Houses</a>
+                            <a class="thz-text-sm thz-text-primary thz-font-normal thz-border thz-border-border4 hover:thz-border-brand hover:thz-text-brand thz-transition-all thz-duration-300 thz-inline-block thz-py-2 thz-px-3.5 thz-rounded-full" href="#">Agent</a>
+                        </div>
+                        <!-- social-icon -->
+                        <div class="thz-flex thz-gap-4">
+                            <a class="thz-inline-block thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="#"><i class="fi-facebook"></i></a>
+                            <a class="thz-inline-block thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="#"><i class="fi-linkedin"></i></a>
+                            <a class="thz-inline-block thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="#"><i class="fi-x"></i></a>
+                            <a class="thz-inline-block thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="#"><i class="fi-instagram"></i></a>
+                        </div>
+                    </div>
+                    <!-- author -->
+                    <div class="thz-mt-14 sm:thz-p-10 thz-flex thz-flex-col sm:thz-border thz-border-border3 thz-rounded-lg sm:thz-flex-row thz-gap-7 thz-items-center sm:thz-items-start lg:thz-items-center">
+                        <!-- author-img -->
+                        <div><img class="thz-w-full thz-rounded-full" src="../img/blog/author.png" alt=""></div>
+                        <!-- author-name -->
+                        <div class="thz-w-full sm:thz-w-[500px] lg:thz-w-[708px]">
+                            <div class="thz-text-center sm:thz-text-left">
+                                <h2 class="thz-text-lg thz-text-primary thz-font-semibold">Adrian Neo</h2>
+                                <p class="thz-text-sm thz-font-normal thz-leading-7">Whether you're enjoying the tranquility of the surroundings, entertaining guests in the elegant living spaces, or lounging by the pool, this property offers a harmonious blend of modern </p>
+                                <!-- social-icon -->
+                                <div class="thz-flex thz-gap-4 thz-justify-center sm:thz-justify-start thz-mt-3">
+                                    <a class="thz-inline-block thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="#"><i class="fi-facebook"></i></a>
+                                    <a class="thz-inline-block thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="#"><i class="fi-linkedin"></i></a>
+                                    <a class="thz-inline-block thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="#"><i class="fi-x"></i></a>
+                                    <a class="thz-inline-block thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="#"><i class="fi-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3-comments -->
+                    <div class="thz-py-16 sm:thz-pb-20 xl:thz-pb-[100px] sm:thz-pl-4">
+                        <!-- title -->
+                        <h2 class="thz-text-xl md:thz-text-2xl lg:thz-text-3xl thz-text-primary thz-font-bold thz-text-center sm:thz-text-left">3 Comments</h2>
+                        <!-- admin -->
+                        <div class="thz-mt-14 thz-pb-10 thz-flex thz-flex-col sm:thz-border-b thz-border-border3 sm:thz-flex-row thz-gap-6 lg:thz-gap-10 thz-items-center sm:thz-items-start lg:thz-items-center">
+                            <!-- author-img -->
+                            <div><img class="thz-w-full thz-rounded-full" src="../img/blog/admin.png" alt=""></div>
+                            <!-- author-name -->
+                            <div class="thz-w-full sm:thz-w-[500px] lg:thz-w-[708px]">
+                                <div class="thz-text-center sm:thz-text-left">
+                                    <div class="thz-flex thz-items-center thz-justify-center sm:thz-justify-start thz-gap-4">
+                                        <h2 class="thz-text-lg thz-text-primary thz-font-semibold">Admin</h2>
+                                        <p class="thz-text-xs thz-text-secondary thz-font-normal">Mayt 10, 2025</p>
+                                    </div>
+                                    <p class="thz-text-sm thz-font-normal thz-leading-7">Whether you're enjoying the tranquility of the surroundings, entertaining guests this property offers a harmonious blend of modern houses design</p>
+                                    <!-- reply-button -->
+                                    <a class="thz-mt-3 thz-text-xs thz-text-primary thz-font-semibold thz-border thz-border-border4 thz-inline-block thz-py-1 thz-px-5 thz-rounded-full" href="#">Reply</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- admin -->
+                        <div class="thz-mt-14 sm:thz-ml-24 thz-pb-10 thz-flex thz-flex-col sm:thz-border-b thz-border-border3 sm:thz-flex-row thz-gap-6 lg:thz-gap-10 thz-items-center sm:thz-items-start lg:thz-items-center">
+                            <!-- author-img -->
+                            <div><img class="thz-w-full thz-rounded-full" src="../img/blog/admin.png" alt=""></div>
+                            <!-- author-name -->
+                            <div class="thz-w-full sm:thz-w-[500px] lg:thz-w-[708px]">
+                                <div class="thz-text-center sm:thz-text-left">
+                                    <div class="thz-flex thz-items-center thz-justify-center sm:thz-justify-start thz-gap-4">
+                                        <h2 class="thz-text-lg thz-text-primary thz-font-semibold">Admin</h2>
+                                        <p class="thz-text-xs thz-text-secondary thz-font-normal">Mayt 10, 2025</p>
+                                    </div>
+                                    <p class="thz-text-sm thz-font-normal thz-leading-7">Whether you're enjoying the tranquility of the surroundings, entertaining guests this property offers a harmonious blend of modern houses design</p>
+                                    <!-- reply-button -->
+                                    <a class="thz-mt-3 thz-text-xs thz-text-primary thz-font-semibold thz-border thz-border-border4 thz-inline-block thz-py-1 thz-px-5 thz-rounded-full" href="#">Reply</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- form -->
+                    <div class="thz-p-10 sm:thz-p-14 thz-border thz-border-border3 thz-rounded-lg">
+                        <!-- title -->
+                        <h2 class="thz-text-xl md:thz-text-2xl lg:thz-text-3xl thz-text-primary thz-font-bold">Post a Comment</h2>
+                        <form action="#">
+                            <div class="thz-grid thz-grid-cols-1 md:thz-grid-cols-2 md:thz-gap-12">
+                                <input class="thz-pt-8 thz-pb-3 thz-text-sm thz-font-normal thz-outline-none thz-border-b thz-border-border5 focus:thz-border-brand" type="text" placeholder="Your Name">
+                                <input class="thz-pt-8 thz-pb-3 thz-text-sm thz-font-normal thz-outline-none thz-border-b thz-border-border5 focus:thz-border-brand" type="email" placeholder="Email">
+                            </div>
+                            <input class="thz-w-full thz-pt-8 thz-pb-3 thz-text-sm thz-font-normal thz-outline-none thz-border-b thz-border-border5 focus:thz-border-brand" type="text" placeholder="Website">
+                            <textarea class="thz-w-full thz-pt-5 thz-h-28 thz-text-sm thz-font-normal thz-outline-none thz-border-b thz-border-border5 focus:thz-border-brand" name="comment" placeholder="Comment..."></textarea>
+                            <button class="thz-group thz-w-full sm:thz-w-[208px] thz-bg-brand thz-text-white thz-text-sm thz-font-medium thz-py-3 thz-pl-2 thz-rounded thz-mt-8 thz-flex thz-items-center thz-justify-center">Post Comment<i class="fi-arrow-up-right thz-text-[22px] thz-text-white thz-ml-1 thz-rotate-0 group-hover:thz-rotate-45 thz-transition-all thz-duration-300"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!-- side-bar -->
+                <div class="md:thz-col-span-4 xl:thz-col-span-1">
+                    <div class="thz-grid sm:thz-grid-cols-2 lg:thz-grid-cols-3 xl:thz-grid-cols-1 thz-gap-7">
+                        <!-- search-form -->
+                        <div class="thz-border thz-border-border3 thz-rounded-lg thz-p-8 sm:thz-p-4 md:thz-p-8">
+                            <h2 class="thz-text-lg thz-text-primary thz-font-bold thz-mb-2">Search</h2>
+                            <form action="#" class="thz-relative">
+                                <input class="thz-w-full thz-bg-white thz-border-b thz-border-border5 focus:thz-border-brand thz-py-3 thz-outline-none thz-text-sm thz-font-normal"  type="text" placeholder="Search...">
+                                <button class="thz-absolute thz-right-0 thz-top-4"><i class="fi-search thz-text-primary thz-font-bold thz-inline-block"></i></button>
+                            </form>
+                        </div>
+                        <!-- Categories -->
+                        <div class="thz-border thz-border-border3 thz-rounded-lg thz-p-8 sm:thz-p-4 md:thz-p-8">
+                            <!-- title -->
+                            <h2 class="thz-text-lg thz-text-primary thz-font-bold thz-mb-4">Categories</h2>
+                            <ul class="thz-space-y-3">
+                                <li><a class="thz-text-sm thz-font-normal thz-text-secondary thz-flex thz-justify-between thz-items-center" href="#">Duplex House<i class="fi-arrow-up-right thz-text-[22px] thz-text-gray"></i></a></li>
+                                <li><a class="thz-text-sm thz-font-normal thz-text-secondary thz-flex thz-justify-between thz-items-center" href="#">Land<i class="fi-arrow-up-right thz-text-[22px] thz-text-gray"></i></a></li>
+                                <li><a class="thz-text-sm thz-font-normal thz-text-secondary thz-flex thz-justify-between thz-items-center" href="#">Apartments<i class="fi-arrow-up-right thz-text-[22px] thz-text-gray"></i></a></li>
+                                <li><a class="thz-text-sm thz-font-normal thz-text-secondary thz-flex thz-justify-between thz-items-center" href="#">Commercials<i class="fi-arrow-up-right thz-text-[22px] thz-text-gray"></i></a></li>
+                                <li><a class="thz-text-sm thz-font-normal thz-text-secondary thz-flex thz-justify-between thz-items-center" href="#">Home Rental<i class="fi-arrow-up-right thz-text-[22px] thz-text-gray"></i></a></li>
+                                <li><a class="thz-text-sm thz-font-normal thz-text-secondary thz-flex thz-justify-between thz-items-center" href="#">Sell<i class="fi-arrow-up-right thz-text-[22px] thz-text-gray"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- feature-properties -->
+                        <div class="thz-border thz-border-border3 thz-rounded-lg thz-p-8 sm:thz-p-4 md:thz-p-8">
+                            <h2 class="thz-text-lg thz-text-primary thz-font-bold thz-mb-4">Featured Properties</h2>
+                            <div class="thz-space-y-2">
+                                <!-- feature-items-1 -->
+                                <div class="thz-flex thz-gap-4">
+                                    <!-- features-img -->
+                                    <div>
+                                        <img class="thz-rounded thz-w-full" src="../img/feature/feature-1.png" alt="">
+                                    </div>
+                                    <!-- features-content -->
+                                    <div>
+                                        <a class="thz-text-sm thz-font-bold thz-text-primary" href="#">Ocean House</a>
+                                        <p class="thz-text-sm thz-font-normal thz-text-secondary">$3500</p>
+                                    </div>
+                                </div>
+                                <!-- feature-items-2 -->
+                                <div class="thz-flex thz-gap-4">
+                                    <!-- features-img -->
+                                    <div>
+                                        <img class="thz-rounded thz-w-full" src="../img/feature/feature-2.png" alt="">
+                                    </div>
+                                    <!-- features-content -->
+                                    <div>
+                                        <a class="thz-text-sm thz-font-bold thz-text-primary" href="#">Ocean House</a>
+                                        <p class="thz-text-sm thz-font-normal thz-text-secondary">$3500</p>
+                                    </div>
+                                </div>
+                                <!-- feature-items-3 -->
+                                <div class="thz-flex thz-gap-4">
+                                    <!-- features-img -->
+                                    <div>
+                                        <img class="thz-rounded thz-w-full" src="../img/feature/feature-3.png" alt="">
+                                    </div>
+                                    <!-- features-content -->
+                                    <div>
+                                        <a class="thz-text-sm thz-font-bold thz-text-primary" href="#">Ocean House</a>
+                                        <p class="thz-text-sm thz-font-normal thz-text-secondary">$3500</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blog-section-end -->
+
+        <!-- footer-start -->
+        <footer class="thz-pt-10 lg:thz-pt-16 2xl:thz-pt-24 thz-bg-footerBg1">
+            <!-- container -->
+            <div class="thz-container thz-pb-10 lg:thz-pb-16 ">
+                <div class="thz-grid thz-grid-cols-1 sm:thz-grid-cols-2 lg:thz-grid-cols-4 thz-space-y-10 sm:thz-space-y-0 sm:thz-gap-10 xl:thz-gap-0">
+                    <!-- footer-logo -->
+                    <div class="thz-space-y-4 xl:thz-border-r thz-border-border2 md:thz-pr-10 lg:thz-pr-0 xl:thz-pr-10">
+                        <img src="../img/logos/black-logo.svg" alt="">
+                        <p class="thz-text-sm thz-font-normal thz-text-secondary">Finding my dream home was seamless home. Their dedicated team not only   unders my needs but exceeded expectation making home.ownership a reality.</p>
+                        <a href="#" class="demo-1-color thz-inline-flex thz-text-sm thz-text-primary thz-font-medium">Read more<i class="fi-arrow-up-right thz-text-[22px] thz-text-gray thz-ml-1"></i></a>
+                    </div>
+                    <!-- footer-contact -->
+                    <div class="lg:thz-pl-5 xl:thz-px-10 2xl:thz-pr-12 xl:thz-border-r thz-border-border2">
+                        <!-- title -->
+                        <h2 class="thz-text-lg thz-font-medium thz-text-primary thz-mb-5">Contact Us</h2>
+                        <!-- location -->
+                        <div class="thz-flex thz-gap-4 thz-border-b thz-border-border2 thz-pb-5 thz-mb-5">
+                            <i class="fi-map-pin thz-text-[22px] thz-mt-1"></i>
+                            <div>
+                                <p class="thz-text-sm thz-font-normal">65 Park avenue road</p>
+                                <p class="thz-text-sm thz-font-normal">North Florida, USA</p>
+                            </div>
+                        </div>
+                        <!-- contact -->
+                        <div class="thz-flex thz-gap-4 thz-border-b thz-border-border2 thz-pb-4 thz-mb-5">
+                            <i class="fi-phone-incoming thz-text-[22px] thz-mt-1"></i>
+                            <div>
+                                <h2 class="thz-text-sm thz-font-semibold thz-text-primary">Call now</h2>
+                                <p class="thz-text-sm thz-font-normal">(301) 987-0256</p>
+                            </div>
+                        </div>
+                        <!-- email -->
+                        <div class="thz-flex thz-gap-4">
+                            <i class="fi-email thz-text-[22px]"></i>
+                            <div>
+                                <h2 class="thz-text-sm thz-font-semibold thz-text-primary thz-leading-none">Email</h2>
+                                <p class="thz-text-sm thz-font-normal">home@themebeer.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer-link -->
+                    <div class="lg:thz-pl-7 xl:thz-pl-10 2xl:thz-pl-12 xl:thz-border-r thz-border-border2">
+                        <!-- title -->
+                        <h2 class="thz-text-lg thz-font-medium thz-text-primary thz-mb-4">Quick Links</h2>
+                        <!-- link -->
+                        <ul class="thz-space-y-2">
+                            <li><a class="thz-text-sm thz-font-normal" href="#">Terms of service</a></li>
+                            <li><a class="thz-text-sm thz-font-normal" href="#">Privacy Policy</a></li>
+                            <li><a class="thz-text-sm thz-font-normal" href="#">Pricing Plan</a></li>
+                            <li><a class="thz-text-sm thz-font-normal" href="#">FAQ</a></li>
+                            <li><a class="thz-text-sm thz-font-normal" href="#">Contact Us</a></li>
+                            <li><a class="thz-text-sm thz-font-normal" href="#">Career</a></li>
+                        </ul>
+                    </div>
+                    <!-- footer-social -->
+                    <div class="thz-space-y-4 xl:thz-pl-10 2xl:thz-pl-12">
+                        <!-- title -->
+                        <h2 class="thz-text-lg thz-font-medium thz-text-primary thz-mb-4">Get Connected</h2>
+                        <!-- form -->
+                        <form action="#" class="demo-1-color thz-relative">
+                            <input class="thz-w-full thz-py-2 thz-outline-none thz-bg-transparent thz-border-b thz-border-secondary focus:thz-border-brand thz-transition-all thz-duration-300 placeholder:thz-text-primary thz-font-semibold thz-text-sm" type="email" placeholder="Email address">
+                            <i class="fi-arrow-up-right thz-absolute thz-top-2 thz-right-0 thz-text-[22px] thz-text-gray"></i>
+                        </form>
+                        <p  class="thz-text-sm thz-font-normal">Finding my dream home was seamless me my needs but exceeded</p>
+                        <!-- social-icon -->
+                        <div class="thz-space-y-4">
+                            <h2 class="thz-text-lg thz-text-primary thz-font-medium">Social media</h2>
+                            <!-- social-link -->
+                            <div class="thz-flex thz-gap-5 thz-items-center">
+                                <a class="thz-inline-block thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="#"><i class="fi-facebook"></i></a>
+                                <a class="thz-inline-block thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="#"><i class="fi-linkedin"></i></a>
+                                <a class="thz-inline-block thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="#"><i class="fi-x"></i></a>
+                                <a class="thz-inline-block thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300" href="#"><i class="fi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <!-- copyright -->
+            <div class="thz-border-t thz-border-border2">
+                <div class="thz-container thz-py-8 ">
+                    <p class="thz-text-sm thz-font-normal thz-text-center md:thz-text-left">© 2025 TheHouze. All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-end -->
+
+        <!-- modal-button -->
+        <button class="thz-fixed thz-top-[50%] thz-translate-y-[-50%] thz-right-0 thz-inline-flex thz-px-2.5 thz-py-2 thz-text-xs thz-text-white thz-font-medium thz-uppercase thz-bg-brand thz-z-[99999]" data-toggle="modal" data-target="popup">Demo</button>
+        <!-- modal-content -->
+        <div class="thz-fixed thz-inset-0 thz-w-full thz-h-screen thz-hidden modal thz-overflow-auto thz-z-[99999]" id="popup">
+            <div class="modal-backdrop thz-fixed thz-w-full thz-inset-0 thz-bg-black thz-opacity-20 thz-z-30" data-close>
+            </div>
+            <div class="thz-min-h-screen thz-flex thz-items-center thz-justify-center thz-relative thz-pointer-events-none thz-py-8 thz-px-4 thz-z-50">
+                <div class="thz-fixed thz-left-0 thz-right-0 thz-top-5 sm:thz-top-8 thz-bottom-5 sm:thz-bottom-8 thz-w-[calc(100vw-30px)] sm:thz-w-[calc(100vw-50px)] lg:thz-w-[calc(100vw-100px)] thz-overflow-x-hidden thz-overflow-y-scroll thz-overscroll-contain thz-bg-white thz-mx-auto thz-pointer-events-auto thz-rounded-md">
+                    <div class="thz-p-7 thz-py-4 thz-flex thz-justify-between thz-items-center thz-fixed thz-left-0 thz-right-0 thz-mx-auto thz-bg-white thz-w-[calc(100vw-30px)] sm:thz-w-[calc(100vw-50px)] lg:thz-w-[calc(100vw-100px)] thz-rounded-tl-md thz-rounded-tr-md">
+                        <h5 class="thz-mb-0 thz-text-xl thz-text-primary thz-font-bold thz-leading-none">10 Home Page</h5>
+                        <button class="thz-text-xl thz-text-primary thz-leading-none" data-close> <i class="fi-close"></i></button>
+                    </div>
+                    <div class="thz-p-7 thz-pt-16">
+                        <div class="thz-grid sm:thz-grid-cols-2 lg:thz-grid-cols-3 xl:thz-grid-cols-4 thz-gap-y-10 thz-gap-4">
+                            <!-- demo-1 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-1/./index.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-1.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-1/./index.html">Home-1</a>
+                            </div>
+                            <!-- demo-2 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-1/./index-2.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-2.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-1/./index-2.html">Home-2</a>
+                            </div>
+                            <!-- demo-3 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-2/./index.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-3.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-2/./index.html">Home-3</a>
+                            </div>
+                            <!-- demo-4 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-2/./index-2.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-4.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-2/./index-2.html">Home-4</a>
+                            </div>
+                            <!-- demo-5 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-3/./index.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-5.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-3/./index.html">Home-5</a>
+                            </div>
+                            <!-- demo-6 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-3/./index-2.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-6.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-3/./index-2.html">Home-6</a>
+                            </div>
+                            <!-- demo-7 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-4/./index.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-7.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-4/./index.html">Home-7</a>
+                            </div>
+                            <!-- demo-8 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-4/./index-2.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-8.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-4/./index-2.html">Home-8</a>
+                            </div>
+                            <!-- demo-9 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-5/./index.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-9.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-5/./index.html">Home-9</a>
+                            </div>
+                            <!-- demo-10 -->
+                            <div class="thz-text-center">
+                                <a class="thz-mb-6 custom-shadow-13 thz-border thz-border-border2 thz-p-5 thz-block thz-rounded-xl"
+                                    href="../demo-5/./index-2.html"><img class="thz-w-full thz-rounded-lg custom-shadow-2" src="../img/demo/home-10.webp"
+                                        alt=""></a>
+                                <a class="thz-text-[20px] thz-text-primary hover:thz-text-brand thz-transition-all thz-duration-300 thz-font-bold thz-leading-7 thz-inline-block"
+                                    href="../demo-5/./index-2.html">Home-10</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- js-here -->
+        <!-- ====================== -->
+        <!-- jquery-1.12.4.min.js -->
+        <script src="../js/jquery-1.12.4.min.js"></script>
+        <!-- main.js -->
+        <script src="../js/main.js"></script>
+    </body>
+</html>
