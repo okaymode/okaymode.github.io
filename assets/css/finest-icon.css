@@ -1,0 +1,231 @@
+@font-face {
+  font-family: 'FinestIcon';
+  src:  url('../fonts/FinestIcon.eot?kfrmkn');
+  src:  url('../fonts/FinestIcon.eot?kfrmkn#iefix') format('embedded-opentype'),
+    url('../fonts/FinestIcon.ttf?kfrmkn') format('truetype'),
+    url('../fonts/FinestIcon.woff?kfrmkn') format('woff'),
+    url('../fonts/FinestIcon.svg?kfrmkn#FinestIcon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'FinestIcon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fi-sort-arrow:before {
+  content: "\e905";
+}
+.fi-quote-fill:before {
+  content: "\e904";
+}
+.fi-quote-fill-left:before {
+  content: "\e900";
+}
+.fi-eclips:before {
+  content: "\e901";
+}
+.fi-bar:before {
+  content: "\e902";
+}
+.fi-car:before {
+  content: "\e903";
+}
+.fi-clock:before {
+  content: "\e945";
+}
+.fi-youtube:before {
+  content: "\e90b";
+}
+.fi-x:before {
+  content: "\e90c";
+}
+.fi-user:before {
+  content: "\e90d";
+}
+.fi-twitter:before {
+  content: "\e90e";
+}
+.fi-star:before {
+  content: "\e906";
+}
+.fi-star-fill:before {
+  content: "\e907";
+}
+.fi-shop:before {
+  content: "\e908";
+}
+.fi-share:before {
+  content: "\e909";
+}
+.fi-settings:before {
+  content: "\e90a";
+}
+.fi-send:before {
+  content: "\e947";
+}
+.fi-search:before {
+  content: "\e948";
+}
+.fi-search-home:before {
+  content: "\e949";
+}
+.fi-save:before {
+  content: "\e950";
+}
+.fi-print:before {
+  content: "\e911";
+}
+.fi-plus:before {
+  content: "\e912";
+}
+.fi-play:before {
+  content: "\e913";
+}
+.fi-phone-incoming:before {
+  content: "\e914";
+}
+.fi-petrolium:before {
+  content: "\e915";
+}
+.fi-petro-doller:before {
+  content: "\e916";
+}
+.fi-park:before {
+  content: "\e917";
+}
+.fi-park-2:before {
+  content: "\e918";
+}
+.fi-minus:before {
+  content: "\e919";
+}
+.fi-menu:before {
+  content: "\e91a";
+}
+.fi-map-pin:before {
+  content: "\e91b";
+}
+.fi-list:before {
+  content: "\e91c";
+}
+.fi-linkedin:before {
+  content: "\e91d";
+}
+.fi-lab:before {
+  content: "\e91e";
+}
+.fi-instagram:before {
+  content: "\e91f";
+}
+.fi-home:before {
+  content: "\e920";
+}
+.fi-home-star:before {
+  content: "\e921";
+}
+.fi-home-map:before {
+  content: "\e922";
+}
+.fi-heart:before {
+  content: "\e923";
+}
+.fi-grid:before {
+  content: "\e924";
+}
+.fi-gas-fire:before {
+  content: "\e925";
+}
+.fi-fire:before {
+  content: "\e926";
+}
+.fi-facebook:before {
+  content: "\e927";
+}
+.fi-email:before {
+  content: "\e928";
+}
+.fi-edit:before {
+  content: "\e929";
+}
+.fi-edit-scale:before {
+  content: "\e92a";
+}
+.fi-construction-wall:before {
+  content: "\e92b";
+}
+.fi-construction-user:before {
+  content: "\e92c";
+}
+.fi-construction-pencil:before {
+  content: "\e92d";
+}
+.fi-construction-paint:before {
+  content: "\e92e";
+}
+.fi-construction-industry:before {
+  content: "\e92f";
+}
+.fi-construction-hook:before {
+  content: "\e930";
+}
+.fi-construction-cart:before {
+  content: "\e931";
+}
+.fi-commercial:before {
+  content: "\e932";
+}
+.fi-close:before {
+  content: "\e933";
+}
+.fi-chevron-up:before {
+  content: "\e934";
+}
+.fi-chevron-right:before {
+  content: "\e935";
+}
+.fi-chevron-left:before {
+  content: "\e936";
+}
+.fi-chevron-down:before {
+  content: "\e937";
+}
+.fi-chemical:before {
+  content: "\e938";
+}
+.fi-check:before {
+  content: "\e939";
+}
+.fi-check-box:before {
+  content: "\e93a";
+}
+.fi-building:before {
+  content: "\e93b";
+}
+.fi-bed:before {
+  content: "\e93d";
+}
+.fi-bath:before {
+  content: "\e93e";
+}
+.fi-arrow-up-right:before {
+  content: "\e940";
+}
+.fi-arrow-right:before {
+  content: "\e941";
+}
+.fi-arrow-left:before {
+  content: "\e942";
+}
